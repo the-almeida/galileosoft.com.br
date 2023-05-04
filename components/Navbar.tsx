@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineClose } from 'react-icons/md'
+import Image from 'next/image';
 
 
 export default function Navbar() {
@@ -18,10 +19,17 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="bg-purple-900/25 fixed w-full z-10 shadow-md">
+    <nav className="bg-purple-900/40 fixed w-full z-10 shadow-md">
       <div className="flex justify-between max-w-7xl h-16 mx-auto px-6 lg:px-8">
         <div className="flex-shrink-0 flex items-center">
-          <Link href="#" className="text-white text-2xl font-bold">GalileoSoft</Link>
+          <Link href="#" className="fill-white text-2xl font-bold">
+            <Image 
+              src="/logoGalileoSoft.svg" 
+              alt="GalileoSoft Logo" 
+              height={35}
+              width={210}
+            />
+          </Link>
         </div>
         <div className="hidden sm:flex items-center gap-4 ml-6">
           {navLinks.map(link => {
@@ -45,7 +53,7 @@ export default function Navbar() {
         showLinks ?
           <div 
             onClick={()=>setShowLinks(false)}
-            className="absolute top-16 left-0 right-0 bottom-0 pb-16 h-screen flex justify-center align-middle bg-gray-900"
+            className="absolute top-16 left-0 right-0 bottom-0 pt-4 pb-16 px-4 h-screen flex justify-center align-middle bg-gray-900"
           >
             <div className='my-auto text-center flex flex-col gap-20 w-2/5'>
               {navLinks.map(link => {
