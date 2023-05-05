@@ -1,12 +1,11 @@
 import BackgroundImage from "@/components/BackgroundImage";
 import Container from "@/components/FlexContainer";
 import Footer from "@/components/Footer";
+import { MdPhone } from "react-icons/md";
 
 export default function Home() {
   return (
-    <>
-      {/* TODO Improve the bgImageHomePageHeroSection, move the rocket to the #heroSection*/}
-      
+    <>      
       <main className="flex flex-col items-center justify-between">
         <section className="h-screen relative w-full" id="heroSection">
           <BackgroundImage
@@ -24,38 +23,44 @@ export default function Home() {
               <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
                 Somos seus parceiros em tecnologia para crescer e inovar com tecnologia de ponta.
               </p>
+              <button className="flex justify-center gap-4 rounded-sm bg-gray-600 w-fit px-6 py-4">
+                <MdPhone size={18} /> TODO: Definir a CTA 
+              </button>
             </div>
             <div className="absolute md:relative min-h-screen md:min-h-fit w-full flex flex-1 justify-center bg-slate-500/50 mt-16 -z-10">
-              <p>Foguete</p>
+              <p>TODO: Trocar o backckgroud para um sem foguete e adicionar só o foguete no lugar desse paragrafo</p>
             </div>
           </Container>
         </section>
 
-        <section className="bg-red-600 h-screen" id="aboutSection">
-          <h2 className="text-2xl">Conheça a GalileoSoft</h2>
-          <div>
-            <h3 className="text-2xl">São mais de 7 anos de história</h3>
-            <p>
-              A GalileoSoft surgiu em 2016 com foco em posicionamento digital associado a softwares personalizados.
-            </p>
-          </div>
-          <div>
-            <h3>A inovação é nossa essência</h3>
-            <p>
-              Desde a nossa entrada no mercado buscamos evoluir constantemente. Por conta disso notamos que muitas empresas que nos contratavam não tinham acesso às mais novas e modernas ferramentas de gestão.
-              <strong>Estamos aqui para acabar com esse problema.</strong>
-            </p>
+        <section className="h-screen relative w-full" id="aboutSection">
+          <BackgroundImage />
+          <Container className="flex-col">
+            <h2 className="text-4xl text-center">Conheça a GalileoSoft</h2>
+            <div>
+              <h3 className="text-2xl">São mais de 7 anos de história</h3>
+              <p>
+                A GalileoSoft surgiu em 2016 com foco em posicionamento digital associado a softwares personalizados.
+              </p>
+            </div>
+            <div>
+              <h3>A inovação é nossa essência</h3>
+              <p>
+                Desde a nossa entrada no mercado buscamos evoluir constantemente. Por conta disso notamos que muitas empresas que nos contratavam não tinham acesso às mais novas e modernas ferramentas de gestão.
+                <strong>Estamos aqui para acabar com esse problema.</strong>
+              </p>
 
-          </div>
-          <div>
-            <h3>O nosso diferencial</h3>
-            <p>
-              Identificamos que integrar e adaptar ferramentas modernas de altíssima qualidade (com reconhecimento nacional) aos negócios tradicionais seria o caminho que trilharíamos.
-              <strong> 
-                Nosso trunfo é conseguir conectar a realidade da operação às ferramentas de gestão com agilidade.
-              </strong>
-            </p>
-          </div>
+            </div>
+            <div>
+              <h3>O nosso diferencial</h3>
+              <p>
+                Identificamos que integrar e adaptar ferramentas modernas de altíssima qualidade (com reconhecimento nacional) aos negócios tradicionais seria o caminho que trilharíamos.
+                <strong> 
+                  Nosso trunfo é conseguir conectar a realidade da operação às ferramentas de gestão com agilidade.
+                </strong>
+              </p>
+            </div>
+          </Container>
         </section>
       </main>
       <Footer />
