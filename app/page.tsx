@@ -5,7 +5,7 @@ import { MdPhone } from "react-icons/md";
 
 export default function Home() {
   return (
-    <>      
+    <>
       <main className="flex flex-col items-center justify-between">
         <section className="h-screen relative w-full" id="heroSection">
           <BackgroundImage
@@ -24,7 +24,7 @@ export default function Home() {
                 Somos seus parceiros em tecnologia para crescer e inovar com tecnologia de ponta.
               </p>
               <button className="flex justify-center gap-4 rounded-sm bg-gray-600 w-fit px-6 py-4">
-                <MdPhone size={18} /> TODO: Definir a CTA 
+                <MdPhone size={18} /> TODO: Definir a CTA
               </button>
             </div>
             <div className="absolute md:relative min-h-screen md:min-h-fit w-full flex flex-1 justify-center bg-slate-500/50 mt-16 -z-10">
@@ -35,31 +35,36 @@ export default function Home() {
 
         <section className="h-screen relative w-full" id="aboutSection">
           <BackgroundImage />
-          <Container className="flex-col">
+          <Container className="flex-col space-y-4">
             <h2 className="text-4xl text-center">Conheça a GalileoSoft</h2>
-            <div>
-              <h3 className="text-2xl">São mais de 7 anos de história</h3>
-              <p>
+            <div className="w-1/2 mr-auto bg-purple-900 rounded-lg overflow-hidden shadow-lg p-6">
+              <h3 className="text-2xl font-bold text-white mb-2">São mais de 7 anos de história</h3>
+              <p className="text-gray-300 leading-relaxed">
                 A GalileoSoft surgiu em 2016 com foco em posicionamento digital associado a softwares personalizados.
               </p>
             </div>
-            <div>
-              <h3>A inovação é nossa essência</h3>
-              <p>
+
+            <div className="w-1/2 ml-auto bg-purple-900 rounded-lg overflow-hidden shadow-lg p-6">
+              <h3 className="text-2xl font-bold text-white mb-2">A inovação é nossa essência</h3>
+              <p className="text-gray-300 leading-relaxed">
                 Desde a nossa entrada no mercado buscamos evoluir constantemente. Por conta disso notamos que muitas empresas que nos contratavam não tinham acesso às mais novas e modernas ferramentas de gestão.
                 <strong>Estamos aqui para acabar com esse problema.</strong>
               </p>
-
             </div>
-            <div>
-              <h3>O nosso diferencial</h3>
-              <p>
+
+            <div className="w-1/2 mr-auto bg-purple-900 rounded-lg overflow-hidden shadow-lg p-6">
+              <h3 className="text-2xl font-bold text-white mb-2">O nosso diferencial</h3>
+              <p className="text-gray-300 leading-relaxed">
                 Identificamos que integrar e adaptar ferramentas modernas de altíssima qualidade (com reconhecimento nacional) aos negócios tradicionais seria o caminho que trilharíamos.
-                <strong> 
+                <strong>
                   Nosso trunfo é conseguir conectar a realidade da operação às ferramentas de gestão com agilidade.
                 </strong>
               </p>
             </div>
+
+            <button className="flex justify-center gap-4 rounded-sm bg-gray-600 w-fit mx-auto px-6 py-4">
+              <MdPhone size={18} /> TODO: Definir a CTA
+            </button>
           </Container>
         </section>
       </main>
