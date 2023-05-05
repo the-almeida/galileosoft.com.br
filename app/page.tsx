@@ -12,7 +12,7 @@ export default function Home() {
             src="/bgImageHomePageHeroSection.jpg"
             withOverlay
           />
-          <ContentContainer className="flex flex-row">
+          <ContentContainer className="flex flex-row pt-16 text-center md:text-left">
             <div className="flex flex-col justify-center gap-5 text-white md:w-2/3 px-3 md:px-6 lg:px-8">
               <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
                 Inove e cresça com tecnologia de ponta.
@@ -27,7 +27,7 @@ export default function Home() {
                 <MdPhone size={18} /> TODO: Definir a CTA
               </button>
             </div>
-            <div className="absolute md:relative min-h-screen md:min-h-fit w-full flex flex-1 justify-center bg-slate-500/50 -z-10">
+            <div className="fixed md:relative flex flex-1 justify-center bg-slate-500/50 -ml-3 md:-ml-8 lg:-ml-13 -z-10">
               <p>TODO: Trocar o backckgroud para um sem foguete e adicionar só o foguete no lugar desse paragrafo</p>
             </div>
           </ContentContainer>

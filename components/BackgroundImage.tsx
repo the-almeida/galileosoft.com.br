@@ -8,7 +8,7 @@ interface ImageProps {
 const BackgroundImage = ({ src = "/defaultBgImage.jpg", withOverlay = false }: ImageProps) => {
     return (
         <>
-            <div  x-componenname="BackgroundImage" className="absolute -z-20 w-full h-screen">
+            <div  x-componentname="BackgroundImage" className="absolute -z-20 w-full h-screen">
                 {withOverlay && <div className="bg-gray-900/50 md:bg-gray-900/20 w-full h-screen z-0" /> }
                 <Image
                     className="-z-10"
