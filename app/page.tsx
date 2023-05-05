@@ -1,5 +1,5 @@
 import BackgroundImage from "@/components/BackgroundImage";
-import Container from "@/components/FlexContainer";
+import ContentContainer from "@/components/ContentContainer";
 import Footer from "@/components/Footer";
 import { MdPhone } from "react-icons/md";
 
@@ -12,7 +12,7 @@ export default function Home() {
             src="/bgImageHomePageHeroSection.jpg"
             withOverlay
           />
-          <Container className="flex-row">
+          <ContentContainer className="flex flex-row">
             <div className="flex flex-col justify-center gap-5 text-white md:w-2/3 px-3 md:px-6 lg:px-8">
               <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
                 Inove e cresça com tecnologia de ponta.
@@ -27,15 +27,15 @@ export default function Home() {
                 <MdPhone size={18} /> TODO: Definir a CTA
               </button>
             </div>
-            <div className="absolute md:relative min-h-screen md:min-h-fit w-full flex flex-1 justify-center bg-slate-500/50 mt-16 -z-10">
+            <div className="absolute md:relative min-h-screen md:min-h-fit w-full flex flex-1 justify-center bg-slate-500/50 -z-10">
               <p>TODO: Trocar o backckgroud para um sem foguete e adicionar só o foguete no lugar desse paragrafo</p>
             </div>
-          </Container>
+          </ContentContainer>
         </section>
 
         <section className="h-screen relative w-full" id="aboutSection">
           <BackgroundImage />
-          <Container className="flex-col space-y-4">
+          <ContentContainer className="flex flex-col space-y-4">
             <h2 className="text-4xl text-center">Conheça a GalileoSoft</h2>
             <div className="w-1/2 mr-auto bg-purple-900 rounded-lg overflow-hidden shadow-lg p-6">
               <h3 className="text-2xl font-bold text-white mb-2">São mais de 7 anos de história</h3>
@@ -65,7 +65,7 @@ export default function Home() {
             <button className="flex justify-center gap-4 rounded-sm bg-gray-600 w-fit mx-auto px-6 py-4">
               <MdPhone size={18} /> TODO: Definir a CTA
             </button>
-          </Container>
+          </ContentContainer>
         </section>
       </main>
       <Footer />

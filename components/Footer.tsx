@@ -1,11 +1,11 @@
 import Image from "next/image";
-import FlexContainer from "./FlexContainer";
+import ContentContainer from "./ContentContainer";
 import { MdFacebook, MdLinkedCamera, MdWhatsapp } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FBF2FF] w-full space-y-6">
-      <FlexContainer>
+    <footer x-componenname="Footer" className="bg-[#FBF2FF] w-full space-y-6">
+      <ContentContainer className="flex">
         <div className="text-black flex-1 space-y-3">
           <Image 
             src="/logoGalileoSoftPreto.svg" 
@@ -45,9 +45,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </FlexContainer>
+      </ContentContainer>
       <hr/>
-      <p className="text-center pb-6">Copyright © 2023 by thealmeida.</p>
+      <p className="text-center pb-6">Copyright © 2023 by Gustavo Almeida.</p>
     </footer>
   )
 }
