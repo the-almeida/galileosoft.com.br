@@ -1,6 +1,6 @@
 import BackgroundImage from "@/components/BackgroundImage";
+import Card from "@/components/Card";
 import ContentContainer from "@/components/ContentContainer";
-import Footer from "@/components/Footer";
 import { MdPhone } from "react-icons/md";
 
 export default function Home() {
@@ -35,31 +35,29 @@ export default function Home() {
 
         <section className="h-screen relative w-full" id="aboutSection">
           <BackgroundImage src="/bgImageHomePageAboutSection.jpg" withOverlay opacityScale={0.25} />
-          <ContentContainer className="flex flex-col space-y-4">
+          <ContentContainer className="flex flex-col space-y-4 py-8">
             <h2 className="text-4xl text-center">Conheça a GalileoSoft</h2>
-            <div className="w-1/2 mr-auto bg-purple-900 rounded-lg overflow-hidden shadow-lg p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">São mais de 7 anos de história</h3>
-              <p className="text-gray-300 leading-relaxed">
-                A GalileoSoft surgiu em 2016 com foco em posicionamento digital associado a softwares personalizados.
-              </p>
-            </div>
+            <div className="block lg:flex gap-6">
+              <Card>
+                <h3 className="text-2xl font-bold text-black text-center mb-2">São mais de 7 anos de história</h3>
+                <p className="text-gray-600 leading-normal">
+                  A GalileoSoft surgiu em 2016 com foco em posicionamento digital associado a softwares personalizados. Desde então, utilizamos nossa expertise em gestão e tecnologia para oferecer soluções personalizadas e inovadoras para atender às necessidades específicas de cada cliente.
+                </p>
+              </Card>
 
-            <div className="w-1/2 ml-auto bg-purple-900 rounded-lg overflow-hidden shadow-lg p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">A inovação é nossa essência</h3>
-              <p className="text-gray-300 leading-relaxed">
-                Desde a nossa entrada no mercado buscamos evoluir constantemente. Por conta disso notamos que muitas empresas que nos contratavam não tinham acesso às mais novas e modernas ferramentas de gestão.
-                <strong>Estamos aqui para acabar com esse problema.</strong>
-              </p>
-            </div>
+              <Card>
+                <h3 className="text-2xl font-bold text-black text-center mb-2">A inovação é nossa essência</h3>
+                <p className="text-gray-600 leading-normal">
+                  Desde nossa entrada no mercado, evoluímos constantemente para oferecer soluções modernas e eficazes. Muitas empresas não têm acesso às ferramentas de gestão avançadas, comprometendo sua competitividade. Estamos aqui para oferecer soluções personalizadas e avançadas que permitem que nossos clientes se destaquem.
+                </p>
+              </Card>
 
-            <div className="w-1/2 mr-auto bg-purple-900 rounded-lg overflow-hidden shadow-lg p-6">
-              <h3 className="text-2xl font-bold text-white mb-2">O nosso diferencial</h3>
-              <p className="text-gray-300 leading-relaxed">
-                Identificamos que integrar e adaptar ferramentas modernas de altíssima qualidade (com reconhecimento nacional) aos negócios tradicionais seria o caminho que trilharíamos.
-                <strong>
-                  Nosso trunfo é conseguir conectar a realidade da operação às ferramentas de gestão com agilidade.
-                </strong>
-              </p>
+              <Card>
+                <h3 className="text-2xl font-bold text-black text-center mb-2">O nosso diferencial</h3>
+                <p className="text-gray-600 leading-normal">
+                  Comprovamos em nossa experiência que a integração de ferramentas modernas de alta qualidade aos diferentes modelos de negócio é fundamental para o sucesso das empresas. O nosso diferencial está em conseguir conectar a realidade da operação às ferramentas de gestão com agilidade e eficiência, oferecendo uma solução personalizada e eficaz para cada cliente.
+                </p>
+              </Card>
             </div>
 
             <button className="flex justify-center gap-4 rounded-sm bg-gray-600 w-fit mx-auto px-6 py-4">
