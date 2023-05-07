@@ -34,7 +34,7 @@ export default function Home() {
         </section>
 
         <section className="h-screen relative w-full" id="aboutSection">
-          <BackgroundImage />
+          <BackgroundImage src="/bgImageHomePageAboutSection.jpg" withOverlay opacityScale={0.25} />
           <ContentContainer className="flex flex-col space-y-4">
             <h2 className="text-4xl text-center">Conheça a GalileoSoft</h2>
             <div className="w-1/2 mr-auto bg-purple-900 rounded-lg overflow-hidden shadow-lg p-6">
