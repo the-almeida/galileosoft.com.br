@@ -68,7 +68,6 @@ export default function Home() {
           </ContentContainer>
         </section>
       </main>
-      <Footer />
     </>
   )
 }
