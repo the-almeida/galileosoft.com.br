@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ContentContainer from "./ContentContainer";
-import { MdFacebook, MdLinkedCamera, MdPhone, MdWhatsapp } from "react-icons/md";
+import { MdFacebook, MdPhone, MdWhatsapp } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Footer() {
@@ -73,49 +74,49 @@ export default function Footer() {
 
         <div className="text-black flex-1 space-y-3">
           <h3 className="text-center text-lg font-medium mb-3">Canais de Contato:</h3>
-          <div className="w-fit mx-auto flex gap-6">
+          <div className="w-fit mx-auto grid grid-cols-2 lg:grid-cols-4">
             <Link 
               href="https://api.whatsapp.com/send?phone=5544998850900&text=Ol%C3%A1%20GalileoSoft,%20"
-              className="cursor-pointer"
+              className="cursor-pointer mx-3 md:mx-6"
             >
-              <div className="flex flex-col">
+              <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
                 <span className="rounded-full p-4 bg-purple-800 w-fit mx-auto hover:bg-purple-600">
                   <MdWhatsapp size={20} className="text-white" />
                 </span>
-                <p>Whatsapp</p>
+                <p className="my-2 text-center">Whatsapp</p>
               </div>
             </Link>
             <Link 
               href="tel:+5544998850900"
-              className="cursor-pointer"
+              className="cursor-pointer mx-3 md:mx-6"
             >
-              <div className="flex flex-col">
+              <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
                 <span className="rounded-full p-4 bg-purple-800 w-fit mx-auto hover:bg-purple-600">
                   <MdPhone size={20} className="text-white" />
                 </span>
-                <p>Ligação</p>
+                <p className="my-2 text-center">Ligação</p>
               </div>
             </Link>
             <Link 
               href="https://www.facebook.com/galileosoft/"
-              className="cursor-pointer"
+              className="cursor-pointer mx-3 md:mx-6"
             >
-              <div className="flex flex-col">
+              <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
                 <span className="rounded-full p-4 bg-purple-800 w-fit mx-auto hover:bg-purple-600">
                   <MdFacebook size={20} className="text-white" />
                 </span>
-                <p>Facebook</p>
+                <p className="my-2 text-center">Facebook</p>
               </div>
             </Link>
             <Link 
               href="https://www.facebook.com/galileosoft/"
-              className="cursor-pointer"
+              className="cursor-pointer mx-3 md:mx-6"
             >
-              <div className="flex flex-col">
+              <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
                 <span className="rounded-full p-4 bg-purple-800 w-fit mx-auto hover:bg-purple-600">
-                  <MdLinkedCamera size={20} className="text-white" />
+                  <FaInstagram size={20} className="text-white" />
                 </span>
-                <p>Instagram</p>
+                <p className="my-2 text-center">Instagram</p>
               </div>
             </Link>
           </div>
