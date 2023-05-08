@@ -76,6 +76,7 @@ export default function Footer() {
           <h3 className="text-center text-lg font-medium mb-3">Canais de Contato:</h3>
           <div className="w-fit mx-auto grid grid-cols-2 lg:grid-cols-4">
             <Link 
+              target="_blank"
               href="https://api.whatsapp.com/send?phone=5544998850900&text=Ol%C3%A1%20GalileoSoft,%20"
               className="cursor-pointer mx-3 md:mx-6"
             >
@@ -87,6 +88,7 @@ export default function Footer() {
               </div>
             </Link>
             <Link 
+              target="_blank"
               href="tel:+5544998850900"
               className="cursor-pointer mx-3 md:mx-6"
             >
@@ -98,6 +100,7 @@ export default function Footer() {
               </div>
             </Link>
             <Link 
+              target="_blank"
               href="https://www.facebook.com/galileosoft/"
               className="cursor-pointer mx-3 md:mx-6"
             >
@@ -109,6 +112,7 @@ export default function Footer() {
               </div>
             </Link>
             <Link 
+              target="_blank"
               href="https://www.facebook.com/galileosoft/"
               className="cursor-pointer mx-3 md:mx-6"
             >
