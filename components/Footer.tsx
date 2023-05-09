@@ -38,32 +38,32 @@ export default function Footer() {
 
         <div className="text-black flex-1 space-y-3">
           <h3 className="text-center text-xl font-medium mb-3">Mapa do Site:</h3>
-          <div className="flex flex-col">
+          <div className="flex flex-col space-y-2">
             <Link
               target="_blank"
               href="/"
-              className="cursor-pointer underline underline-offset-4 text-center hover:text-lg"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
             >
               Home
             </Link>
-            <Link
+            {/* <Link
               target="_blank"
               href="/produtos"
-              className="cursor-pointer underline underline-offset-4 text-center hover:text-lg"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
             >
               Produtos
             </Link>
             <Link
               target="_blank"
               href="/faq"
-              className="cursor-pointer underline underline-offset-4 text-center hover:text-lg"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
             >
               FAQ
-            </Link>
+            </Link> */}
             <Link
               target="_blank"
               href="/contato"
-              className="cursor-pointer underline underline-offset-4 text-center hover:text-lg"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
             >
               Contato
             </Link>
@@ -78,7 +78,7 @@ export default function Footer() {
             <Link 
               target="_blank"
               href="https://api.whatsapp.com/send?phone=5544998850900&text=Ol%C3%A1%20GalileoSoft,%20"
-              className="cursor-pointer mx-3 md:mx-6"
+              className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
             >
               <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
                 <span className="rounded-full p-4 bg-purple-800 w-fit mx-auto hover:bg-purple-600">
@@ -90,7 +90,7 @@ export default function Footer() {
             <Link 
               target="_blank"
               href="tel:+5544998850900"
-              className="cursor-pointer mx-3 md:mx-6"
+              className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
             >
               <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
                 <span className="rounded-full p-4 bg-purple-800 w-fit mx-auto hover:bg-purple-600">
@@ -102,7 +102,7 @@ export default function Footer() {
             <Link 
               target="_blank"
               href="https://www.facebook.com/galileosoft/"
-              className="cursor-pointer mx-3 md:mx-6"
+              className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
             >
               <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
                 <span className="rounded-full p-4 bg-purple-800 w-fit mx-auto hover:bg-purple-600">
@@ -114,7 +114,7 @@ export default function Footer() {
             <Link 
               target="_blank"
               href="https://www.facebook.com/galileosoft/"
-              className="cursor-pointer mx-3 md:mx-6"
+              className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
             >
               <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
                 <span className="rounded-full p-4 bg-purple-800 w-fit mx-auto hover:bg-purple-600">
@@ -130,9 +130,9 @@ export default function Footer() {
       <Link
         target="_blank"
         href="https://thealmeida.online"
-        className="cursor-pointer underline underline-offset-4 hover:text-lg transition-transform"
+        className="cursor-pointer underline underline-offset-4"
       >
-        <p className="text-center mt-6">Copyright © 2023 by Gustavo Almeida.</p>
+        <p className="text-center mt-6 hover:scale-110 transform transition duration-500 w-1/2 mx-auto">Copyright © 2023 by Gustavo Almeida.</p>
       </Link>
     </footer>
   )

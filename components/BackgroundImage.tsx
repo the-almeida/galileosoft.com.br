@@ -7,6 +7,8 @@ interface ImageProps {
     src?: string;
     withOverlay?: boolean;
     opacityScale?: number;
+    className?: string;
+    alt?: string;
 }
 
 function configOpacity(value: number | undefined): Opacity | Error{
@@ -20,7 +22,7 @@ function configOpacity(value: number | undefined): Opacity | Error{
     return value as Opacity
 }
 
-export default function BackgroundImage({ src = "/defaultBgImage.jpg", withOverlay = false, opacityScale}: ImageProps) {
+export default function BackgroundImage({ src = "/defaultBgImage.jpg", withOverlay = false, opacityScale, className, alt = ''}: ImageProps) {
     const overlayStyle = {
         backgroundColor: `rgb(88 28 135 / 1)`,
     };
@@ -31,12 +33,12 @@ export default function BackgroundImage({ src = "/defaultBgImage.jpg", withOverl
 
     return (
         <>
-            <div  x-componentname="BackgroundImage" className="absolute -z-20 w-full h-screen">
+            <div  x-componentname="BackgroundImage" className="absolute z-0 w-full h-screen">
                 {withOverlay && <div className="w-full h-screen z-0" style={overlayStyle} /> }
                 <Image
-                    className="-z-10"
+                    className={`${className} -z-10`}
                     src={src}
-                    alt="Background Image purple with a rocket."
+                    alt={alt}
                     fill
                 />
             </div>

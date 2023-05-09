@@ -14,12 +14,12 @@ export default function Navbar() {
 
   const navLinks = [
     {href:"/", text: "Home"},
-    {href:"/produtos", text: "Produtos"},
+    // {href:"/produtos", text: "Produtos"},
     {href:"/contato", text: "Contato"},
   ]
 
   return (
-    <nav x-componentname="Navbar" className="bg-purple-900/40 fixed w-full z-10 shadow-md">
+    <nav x-componentname="Navbar" className="bg-purple-900/40 fixed w-full z-20 shadow-md">
       <div className="flex justify-between max-w-7xl h-16 mx-auto px-6 lg:px-8">
         <div className="flex-shrink-0 flex items-center">
           <Link href="#" className="fill-white text-2xl font-bold">

@@ -1,12 +1,13 @@
-interface ContainerProps {
+interface CardProps {
   children: React.ReactNode;
+  className?: string;
 }
 
-export default function Card({ children }: ContainerProps) {
+export default function Card({ children, className = '' }: CardProps) {
   return (
                 
-    <div x-componentname="Card" className="flex flex-1 bg-slate-200 text-center rounded-lg overflow-hidden shadow-lg p-6 md:p-7 lg:p-10">
-      <div className="mb-auto">
+    <div x-componentname="Card" className="flex flex-1 bg-white text-center rounded-lg overflow-hidden shadow-lg p-6 md:p-7 lg:p-10">
+      <div className={`${className} mb-auto w-full` }>
         {children}
       </div>
     </div>
