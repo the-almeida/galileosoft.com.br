@@ -13,7 +13,7 @@ export default function Home() {
             src="/bgImageHomePageHeroSection.jpg"
             withOverlay
           />
-          <ContentContainer className="flex flex-row pt-16 text-center md:text-left">
+          <ContentContainer className="flex flex-row pt-16 text-center md:text-left relative z-10">
             <div className="flex flex-col justify-center gap-5 text-white md:w-2/3 px-3 md:px-6 lg:px-8">
               <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
                 Inove e cresça com tecnologia de ponta.
