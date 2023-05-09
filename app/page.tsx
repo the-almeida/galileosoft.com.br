@@ -1,8 +1,8 @@
 import BackgroundImage from "@/components/BackgroundImage";
-import Card from "@/components/Card";
 import ContentContainer from "@/components/ContentContainer";
+import LightButton from "@/components/GradientButton";
 import Particles from "@/components/Particles";
-import Link from "next/link";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
@@ -24,9 +24,9 @@ export default function Home() {
               <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
                 Somos seus parceiros em tecnologia para crescer e inovar com tecnologia de ponta.
               </p>
-              <Link href="https://calendly/criar-evento-newton-account" className="bg-gradient-to-br from-pink-600 to-orange-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-900 text-white text-lg font-medium rounded-lg w-fit px-5 py-2.5 text-center mr-2 mb-2">
+              <LightButton target="_blank" href="https://calendly.com/gspalmeida/30min" >
                 Agendar reunião
-              </Link>
+              </LightButton>
             </div>
             <div className="fixed md:relative flex flex-1 justify-center -ml-3 md:-ml-8 lg:-ml-13 -z-10">
               {/* <p>TODO: Trocar o backckgroud para um sem foguete e adicionar só o foguete no lugar desse paragrafo</p> */}
@@ -34,13 +34,13 @@ export default function Home() {
           </ContentContainer>
         </section>
 
-        <section className="w-full flex bg-black relative min-h-[65vh]" id="aboutSection">
+        <section className="w-full flex bg-black relative min-h-[75vh]" id="aboutSection">
           <Particles
             className="absolute animate-fade-in"
             quantity={200}
           />
-          <ContentContainer className="flex flex-col text-black my-auto z-10">
-            <span className="text-orange-500 font-bold text-center">
+          <ContentContainer className="flex flex-col text-black my-auto py-6 z-10">
+            <span className="text-purple-500 font-bold text-center">
               São mais de 7 anos de história!
             </span>
             <h2 className="text-3xl text-center text-white font-bold">
@@ -70,11 +70,15 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-5 mt-10">
               <p className="text-lg leading-5 text-center font-semibold w-1/2 mx-auto">
-                Estamos prontos expandir os horizontes do seu negócio, vamos juntos nessa jornada?
+                Estamos prontos para expandir os horizontes do seu negócio, vamos juntos nessa jornada?
               </p>
-              <Link href="https://calendly/criar-evento-newton-account" className="bg-gradient-to-br from-pink-600 to-orange-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-900 text-white text-lg font-medium rounded-lg w-fit px-5 py-2.5 text-center mx-auto">
+              <LightButton 
+                target="_blank" 
+                href="https://calendly.com/gspalmeida/30min"
+                className="mx-auto"
+              >
                 Falar com especialista!
-              </Link>
+              </LightButton>
             </div>
           </ContentContainer>
         </section>
