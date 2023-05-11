@@ -32,7 +32,7 @@ export default function ContactForm() {
   const sendEmail = (values: ContactFormValues) => {
 
     axios.post("/api/contato", { messageBody: `Nome: ${values.name} \nEmail: ${values.email} \nPhone: ${values.phone} \nEmpresa: ${values.companyName}` })
-      .then(() => alert("Email enviado com sucesso. Um de nossos consultoras entrará em contato em breve"))
+      .then(() => alert("Email enviado com sucesso. Um de nossos consultores entrará em contato em breve para entender como a GalileoSoft pode te ajudar."))
       .catch(() => alert("Sentimos muito mas ocorreu um erro no envio dos seus dados. Por favor utilize um dos canais de contato alternativos abaixo e daremos prioridade para o seu atendimento."))
   }
 
