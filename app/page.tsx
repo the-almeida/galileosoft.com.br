@@ -24,7 +24,7 @@ export default function Home() {
               <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
                 Somos seus parceiros em tecnologia para crescer e inovar com tecnologia de ponta.
               </p>
-              <LightButton target="_blank" href="https://calendly.com/gspalmeida/30min" >
+              <LightButton target="_blank" href="https://calendly.com/galileosoft-br" >
                 Agendar reunião
               </LightButton>
             </div>
@@ -74,7 +74,7 @@ export default function Home() {
               </p>
               <LightButton 
                 target="_blank" 
-                href="https://calendly.com/gspalmeida/30min"
+                href="https://calendly.com/galileosoft-br"
                 className="mx-auto"
               >
                 Falar com especialista!

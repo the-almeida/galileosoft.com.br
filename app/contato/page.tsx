@@ -31,7 +31,7 @@ export default function Contato() {
             <div className="w-fit mx-auto grid gap-4 grid-cols-2 lg:grid-cols-4">
               <Link
                 target="_blank"
-                href="https://api.whatsapp.com/send?phone=5544998850900&text=Ol%C3%A1%20GalileoSoft,%20"
+                href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1%20GalileoSoft,%20"
                 className="cursor-pointer mx-3 md:mx-6 h-fit hover:scale-110 hover:underline hover:underline-offset-4 transform transition duration-500"
               >
                 <Card>
@@ -43,7 +43,7 @@ export default function Contato() {
               </Link>
               <Link
                 target="_blank"
-                href="tel:+5544998850900"
+                href="tel:+5544997530950"
                 className="cursor-pointer mx-3 md:mx-6 h-fit hover:scale-110 hover:underline hover:underline-offset-4 transform transition duration-500"
               >
                 <Card>

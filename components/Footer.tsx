@@ -30,7 +30,7 @@ export default function Footer() {
             <strong>Endereço:</strong> Rua Pioneira Vergínia Maria Fecchio, 880 - Maringá, PR
           </p>
           <p className="text-center text-base">
-            <strong>Telefone:</strong> (44) 9 9985-0900
+            <strong>Telefone:</strong> (44) 9 9753-0950
           </p>
         </div>
 
@@ -77,7 +77,7 @@ export default function Footer() {
           <div className="w-fit mx-auto grid grid-cols-2 lg:grid-cols-4">
             <Link 
               target="_blank"
-              href="https://api.whatsapp.com/send?phone=5544998850900&text=Ol%C3%A1%20GalileoSoft,%20"
+              href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1%20GalileoSoft,%20"
               className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
             >
               <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
@@ -89,7 +89,7 @@ export default function Footer() {
             </Link>
             <Link 
               target="_blank"
-              href="tel:+5544998850900"
+              href="tel:+5544997530950"
               className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
             >
               <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
@@ -113,7 +113,7 @@ export default function Footer() {
             </Link>
             <Link 
               target="_blank"
-              href="https://www.facebook.com/galileosoft/"
+              href="https://www.instagram.com/galileosoft/"
               className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
             >
               <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
