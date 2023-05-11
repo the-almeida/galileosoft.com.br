@@ -4,6 +4,7 @@ import BackgroundImage from "@/components/BackgroundImage"
 import { FaAccessibleIcon, FaInstagram } from "react-icons/fa"
 import Link from "next/link"
 import { MdFacebook, MdPhone, MdWhatsapp } from "react-icons/md"
+import ContactForm from "@/components/ContactForm"
 
 export default function Contato() {
   return (
@@ -20,36 +21,7 @@ export default function Contato() {
           </div>
           <Card>
             <h1 className="text-purple-950 text-3xl text-left font-semibold mb-4">Seja um case de sucesso</h1>
-            <form className="flex flex-col text-black">
-              <input
-                type="text"
-                placeholder="Nome completo (obrigatório)"
-                className="text-md bg-gray-600/10 rounded-md p-3 my-2"
-                required
-              />
-              <input
-                type="email"
-                placeholder="Email profissional (obrigatório)"
-                className="text-md bg-gray-600/10 rounded-md p-3 my-2"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Celular/Whatsapp (obrigatório)"
-                className="text-md bg-gray-600/10 rounded-md p-3 my-2"
-                pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Nome da empresa"
-                className="text-md bg-gray-600/10 rounded-md p-3 my-2"
-              />
-
-              <button type="submit" className="text-white text-center text-lg font-bold rounded-lg mt-2 px-6 py-3 bg-gradient-to-br from-cyan-500 to-green-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-                Enviar
-              </button>
-            </form>
+            <ContactForm />
           </Card>
           <div className="col-start-2">
             <p className="text-center text-md font-semibold opacity-80 px-5">Ao enviar esse formulário, você concorda em receber contatos da GalileoSoft.</p>
@@ -95,7 +67,7 @@ export default function Contato() {
               </Link>
               <Link
                 target="_blank"
-                href="https://www.facebook.com/galileosoft/"
+                href="https://www.instagram.com/galileosoft/"
                 className="cursor-pointer mx-3 md:mx-6 h-fit hover:scale-110 hover:underline hover:underline-offset-4 transform transition duration-500"
                 >
                 <Card>
