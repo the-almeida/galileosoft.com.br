@@ -15,8 +15,7 @@ export async function POST(req: NextRequest) {
     const mailSent = await client.sendAsync({
       text: messageBody,
       from: "Site GalileoSoft <gustavo@galileosoft.com.br>",
-      to: "newton@galileosoft.com.br",
-      cc: "gustavo.s.p.almeida@gmail.com",
+      to: "contato@galileosoft.com.br",
       subject: "Novo contato no site - galileosoft.com.br"
     })
     
