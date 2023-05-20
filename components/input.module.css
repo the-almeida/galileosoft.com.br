@@ -1,0 +1,11 @@
+.inputContainer input:invalid[x-focused="true"] {
+    border: 1px solid red;
+}
+.inputContainer input:invalid[x-focused="true"] ~ span {
+    display: block;
+}
+.inputContainer span {
+    padding: 3px;
+    color: red;
+    display: none;
+}
