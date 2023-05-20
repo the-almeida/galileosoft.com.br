@@ -17,7 +17,7 @@ export default function Footer() {
       <p className="border-l-4 border-gray-500 italic lg:text-lg sm:w-4/5 md:w-3/5 lg:w-1/2 max-w-4xl mx-3 sm:mx-auto pl-4">
         Nosso objetivo é fornecer soluções empresariais de ponta com atendimento personalisado para levar nossos clientes e parceiros a resultados surpreendentes.
         <strong className="block text-right pr-6 mt-0 not-italic">
-          Newton Gama - CEO
+          Newton Gama Jr - CEO
         </strong>
       </p>
 
