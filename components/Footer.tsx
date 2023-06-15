@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer x-componentname="Footer" className="bg-purple-200 space-y-6 py-6">
+    <footer x-componentname="Footer" className="bg-purple-200 z-20 space-y-6 py-6">
       <Image
         src="/logoGalileoSoftPreto.svg"
         alt="GalileoSoft Logo"
