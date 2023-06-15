@@ -1,7 +1,7 @@
 import ContentContainer from "@/components/ContentContainer"
 import Card from "@/components/Card"
 import BackgroundImage from "@/components/BackgroundImage"
-import { FaAccessibleIcon, FaInstagram } from "react-icons/fa"
+import { FaInstagram } from "react-icons/fa"
 import Link from "next/link"
 import { MdFacebook, MdPhone, MdWhatsapp } from "react-icons/md"
 import ContactForm from "@/components/ContactForm"
