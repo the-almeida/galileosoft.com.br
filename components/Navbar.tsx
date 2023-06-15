@@ -19,15 +19,15 @@ export default function Navbar() {
   ]
 
   return (
-    <nav x-componentname="Navbar" className="bg-purple-900/40 fixed w-full z-20 shadow-md">
+    <nav x-componentname="Navbar" className="bg-purple-900/40 fixed w-full z-20 shadow-md backdrop-blur-sm">
       <div className="flex justify-between max-w-7xl h-16 mx-auto px-6 lg:px-8">
-        <div className="flex-shrink-0 flex items-center">
-          <Link href="#" className="fill-white text-2xl font-bold">
+        <div className="flex items-center">
+          <Link href="#" className="fill-white text-2xl font-bold relative w-[210px] h-full">
             <Image 
               src="/logoGalileoSoft.svg" 
               alt="GalileoSoft Logo" 
-              height={35}
-              width={210}
+              fill
+              sizes='210px'
             />
           </Link>
         </div>
