@@ -1,0 +1,30 @@
+.carousel {
+  position: relative;
+}
+.slider {
+  height: 100%;
+  display: flex;
+  transition: all 0.3s;
+}
+.slide{
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40px;
+}
+.controls {
+  position: absolute;
+  top: calc(50% - 15px);
+  width: 100%;
+}
+.arrowLeft{
+  position: absolute;
+  cursor: pointer;
+  left: 10px;
+}
+.arrowRight{
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+}
