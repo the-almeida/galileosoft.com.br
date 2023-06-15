@@ -6,14 +6,16 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer x-componentname="Footer" className="bg-purple-200 z-20 space-y-6 py-6">
-      <Image
-        src="/logoGalileoSoftPreto.svg"
-        alt="GalileoSoft Logo"
-        height={35}
-        width={200}
-        className="mx-auto"
-      />
+    <footer x-componentname="Footer" className="relative bg-purple-200 z-20 space-y-6 py-6">
+      <div className="relative h-10">
+        <Image
+          src="/logoGalileoSoftPreto.svg"
+          alt="GalileoSoft Logo"
+          fill
+          sizes="250px"
+          className="mx-auto"
+        />
+      </div>
       <p className="border-l-4 border-gray-500 italic lg:text-lg sm:w-4/5 md:w-3/5 lg:w-1/2 max-w-4xl mx-3 sm:mx-auto pl-4">
         Nosso objetivo é fornecer soluções empresariais de ponta com atendimento personalisado para levar nossos clientes e parceiros a resultados surpreendentes.
         <strong className="block text-right pr-6 mt-0 not-italic">
@@ -75,7 +77,7 @@ export default function Footer() {
         <div className="text-black flex-1 space-y-3">
           <h3 className="text-center text-lg font-medium mb-3">Canais de Contato:</h3>
           <div className="w-fit mx-auto grid grid-cols-2 lg:grid-cols-4">
-            <Link 
+            <Link
               target="_blank"
               href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1%20GalileoSoft,%20"
               className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
@@ -87,7 +89,7 @@ export default function Footer() {
                 <p className="my-2 text-center">Whatsapp</p>
               </div>
             </Link>
-            <Link 
+            <Link
               target="_blank"
               href="tel:+5544997530950"
               className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
@@ -99,7 +101,7 @@ export default function Footer() {
                 <p className="my-2 text-center">Ligação</p>
               </div>
             </Link>
-            <Link 
+            <Link
               target="_blank"
               href="https://www.facebook.com/galileosoft/"
               className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
@@ -111,7 +113,7 @@ export default function Footer() {
                 <p className="my-2 text-center">Facebook</p>
               </div>
             </Link>
-            <Link 
+            <Link
               target="_blank"
               href="https://www.instagram.com/galileosoft/"
               className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"

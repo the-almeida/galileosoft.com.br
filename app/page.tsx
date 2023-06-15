@@ -15,6 +15,7 @@ export default function Home() {
           alt="Icone Gestão Inteligente"
           className="object-contain absolute"
           fill
+          sizes="112px"
         />
       </div>
       <h3 className="text-2xl font-bold text-center mb-2">
@@ -31,6 +32,7 @@ export default function Home() {
           alt="Icone Gestão Inteligente"
           className="object-contain absolute"
           fill
+          sizes="112px"
         />
       </div>
       <h3 className="text-2xl font-bold text-center mb-2">Inovação constante</h3>
@@ -45,6 +47,7 @@ export default function Home() {
           alt="Icone Gestão Inteligente"
           className="object-contain absolute"
           fill
+          sizes="112px"
         />
       </div>
       <h3 className="text-2xl font-bold text-center mb-2">Mais do que Software</h3>
