@@ -14,7 +14,7 @@ export default function Home() {
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
           src="/iconGestaoInteligente.png"
-          alt="Icone Gestão Inteligente"
+          alt="Ícone Gestão Inteligente"
           className="object-contain absolute"
           fill
           sizes="112px"
@@ -31,7 +31,7 @@ export default function Home() {
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
           src="/iconMaisDoQueSoftware.png"
-          alt="Icone Gestão Inteligente"
+          alt="Ícone Gestão Inteligente"
           className="object-contain absolute"
           fill
           sizes="112px"
@@ -46,7 +46,7 @@ export default function Home() {
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
           src="/iconInovacaoConstante.png"
-          alt="Icone Gestão Inteligente"
+          alt="Ícone Gestão Inteligente"
           className="object-contain absolute"
           fill
           sizes="112px"
@@ -118,7 +118,7 @@ export default function Home() {
                 Somos apaixonados por explorar o cosmos digital em busca de tecnologias para facilitar a sua gestão.
               </p>
               <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
-                Conte com nossa equipe experiente e dedicada para trasnformar suas metas em realidade e simplificar a gestão do seu negócio.
+                Conte com nossa equipe experiente e dedicada para transformar suas metas em realidade e simplificar a gestão do seu negócio.
                 Juntos, vamos alcançar horizontes além da imaginação.
               </p>
             </div>
