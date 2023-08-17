@@ -94,13 +94,12 @@ export default function Home() {
                 Agendar reunião
               </LightButton>
             </div>
+            <div className="scroll-down hidden md:block" />
           </ContentContainer>
         </section>
 
-        <hr className="w-60 h-1 mx-auto my-4 bg-gray-100/30 border-0 rounded hidden md:block" />
-
-        <section className="relative w-full md:h-[90vh]" id="heroSection-pt2">
-          <ContentContainer className="flex flex-row text-center md:text-left relative z-10 py-3 md:pb-24">
+        <section className="relative flex w-full md:min-h-[75vh] pt-[5vh]" id="heroSection-pt2">
+          <ContentContainer className="flex flex-row text-center md:text-left relative z-10 py-3 my-auto">
             <div className="flex flex-col justify-center gap-5 text-white px-3 md:px-6 md:w-2/3 lg:px-8 ">
               <div className="mx-auto block md:hidden">
                 <Image
