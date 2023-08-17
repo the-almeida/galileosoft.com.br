@@ -1,9 +1,11 @@
-import ContentContainer from "@/components/ContentContainer";
-import LightButton from "@/components/GradientButton";
-import Particles from "@/components/Particles";
+import Image from "next/image";
+import BackgroundImage from "@/components/BackgroundImage"
 import Card from "@/components/Card";
 import Carousel from "@/components/Carousel";
-import Image from "next/image";
+import ContentContainer from "@/components/ContentContainer";
+import ContactForm from "@/components/ContactForm"
+import LightButton from "@/components/GradientButton";
+import Particles from "@/components/Particles";
 
 export default function Home() {
 
@@ -85,10 +87,10 @@ export default function Home() {
                 />
               </div>
               <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
-              Explore um universo de possibilidades!
+                Explore um universo de possibilidades!
               </h1>
               <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
-              A sinergia perfeita entre tecnologia e gestão para alcançar resultados extraordinários.
+                A sinergia perfeita entre tecnologia e gestão para alcançar resultados extraordinários.
               </p>
               <LightButton target="_blank" href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o" className="mx-auto md:mr-auto" >
                 Agendar reunião
@@ -160,6 +162,27 @@ export default function Home() {
             </div>
           </ContentContainer>
         </section>
+
+        <section className="relative w-full bg-galileoPurple-900">
+          <ContentContainer className="w-full grid lg:grid-cols-2 gap-x-20 gap-y-2 justify-between items-start relative z-10 my-10">
+            <div className="lg:col-span-1">
+              <h1 className="text-5xl font-semibold pt-3 pb-8">Acelere sua empresa com soluções tecnológicas!
+              </h1>
+              <p className="text-2xl text-gray-200 font-medium pb-3">
+                Cadastre-se e descubra como a tecnologia pode revolucionar sua gestão.
+              </p>
+            </div>
+            <div className="lg:col-span-1 flex flex-col justify-between">
+              <Card>
+                <h1 className="text-purple-950 text-3xl text-left font-semibold mb-4">Seja um case de sucesso</h1>
+                <ContactForm />
+              </Card>
+              <p className="text-center text-md font-semibold opacity-80 px-5 mt-4 lg:mt-0">Ao enviar esse formulário, você concorda em receber contatos da GalileoSoft.</p>
+            </div>
+          </ContentContainer>
+        </section>
+
+
       </main>
     </>
   )

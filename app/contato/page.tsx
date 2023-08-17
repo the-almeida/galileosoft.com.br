@@ -1,10 +1,10 @@
-import ContentContainer from "@/components/ContentContainer"
-import Card from "@/components/Card"
-import BackgroundImage from "@/components/BackgroundImage"
-import { FaInstagram } from "react-icons/fa"
 import Link from "next/link"
-import { MdFacebook, MdPhone, MdWhatsapp } from "react-icons/md"
+import BackgroundImage from "@/components/BackgroundImage"
+import Card from "@/components/Card"
 import ContactForm from "@/components/ContactForm"
+import ContentContainer from "@/components/ContentContainer"
+import { MdFacebook, MdPhone, MdWhatsapp } from "react-icons/md"
+import { FaInstagram } from "react-icons/fa"
 
 export default function Contato() {
   return (
