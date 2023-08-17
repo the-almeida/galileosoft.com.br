@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Home() {
 
   const cards = [
-    <Card key={'smartManagement'}>
+    <Card key={'smartManagement'} bgColor="bg-galileoGray-400">
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
           src="/iconGestaoInteligente.png"
@@ -19,28 +19,13 @@ export default function Home() {
         />
       </div>
       <h3 className="text-2xl font-bold text-center mb-2">
-        Gestão inteligente
+        Tecnologia a favor da Gestão
       </h3>
       <p className="leading-normal">
-        Utilizamos nossa expertise de gestão em conjunto com nosso conhecimento tecnológico para identificar e resolver gargalos nos processos operacionais da sua empresa com agilidade.
+        Diagnóstico e construção de soluções personalizadas para a sua gestão.
       </p>
     </Card>,
-    <Card key={'contantInovation'}>
-      <div className="relative h-28 w-28 mx-auto mb-6">
-        <Image
-          src="/iconInovacaoConstante.png"
-          alt="Icone Gestão Inteligente"
-          className="object-contain absolute"
-          fill
-          sizes="112px"
-        />
-      </div>
-      <h3 className="text-2xl font-bold text-center mb-2">Inovação constante</h3>
-      <p className="leading-normal">
-        Trabalhamos incansavelmente avaliando as tendências do mercado de tecnologia para conseguirmos oferecer soluções personalizadas, inovadoras e que atenderão suas necessidades por um longo prazo.
-      </p>
-    </Card>,
-    <Card key={'moreThanSoftware'}>
+    <Card key={'contentInovation'} bgColor="bg-galileoGray-400">
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
           src="/iconMaisDoQueSoftware.png"
@@ -50,9 +35,24 @@ export default function Home() {
           sizes="112px"
         />
       </div>
-      <h3 className="text-2xl font-bold text-center mb-2">Mais do que Software</h3>
+      <h3 className="text-2xl font-bold text-center mb-2">Estratégia de Implementação</h3>
       <p className="leading-normal">
-        O nosso diferencial é entender o lado humano e operacional de cada empresa para criar uma experiência encantadora para os seus clientes, prática para os seus colaboradores e lucrativa para você.
+        Análise completa de cada caso para uma implementação assertiva.
+      </p>
+    </Card>,
+    <Card key={'moreThanSoftware'} bgColor="bg-galileoGray-400">
+      <div className="relative h-28 w-28 mx-auto mb-6">
+        <Image
+          src="/iconInovacaoConstante.png"
+          alt="Icone Gestão Inteligente"
+          className="object-contain absolute"
+          fill
+          sizes="112px"
+        />
+      </div>
+      <h3 className="text-2xl font-bold text-center mb-2">Assistência sob medida</h3>
+      <p className="leading-normal">
+        Foco em atender necessidades específicas e resolver problemas.
       </p>
     </Card>
   ];
@@ -64,7 +64,7 @@ export default function Home() {
           className="fixed animate-fade-in z-10"
           quantity={200}
         />
-        <div className="absolute right-[10vw] w-[40vw] h-screen hidden md:block">
+        <div className="absolute right-[10vw] w-[40vw] h-[95vh] hidden md:block">
           <Image
             src="/rocket.jpg"
             alt="Foguete decolando"
@@ -73,26 +73,66 @@ export default function Home() {
             sizes="50vw"
           />
         </div>
-        <section className="h-screen relative w-full" id="heroSection">
-          <ContentContainer className="flex flex-row pt-16 text-center md:text-left relative z-10">
+        <section className="py-10 md:py-3 h-[95vh] relative w-full" id="heroSection">
+          <ContentContainer className="flex flex-row text-center relative z-10 pt-16 md:text-left">
             <div className="flex flex-col justify-center gap-5 text-white px-3 md:px-6 lg:px-8 md:w-2/3">
+              <div className="mx-auto block md:hidden">
+                <Image
+                  src="/home-view2-luneta-colorida.png"
+                  alt="Luneta: GalileoSoft visando novos horizontes"
+                  width={300}
+                  height={300}
+                />
+              </div>
               <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
-                Inove e cresça com tecnologia de ponta.
+              Explore um universo de possibilidades!
               </h1>
               <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
-                Atuamos como agentes integradores entre as melhores ferramentas digitais do mercado, desenvolvedores altamente capacitados e a realidade tecnológica da sua empresa.
+              A sinergia perfeita entre tecnologia e gestão para alcançar resultados extraordinários.
               </p>
-              <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
-                Somos seus parceiros em tecnologia para crescer e inovar com tecnologia de ponta.
-              </p>
-              <LightButton target="_blank" href="https://calendly.com/galileosoft-br" className="mx-auto" >
-                Agendar avaliação
+              <LightButton target="_blank" href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o" className="mx-auto md:mr-auto" >
+                Agendar reunião
               </LightButton>
             </div>
           </ContentContainer>
         </section>
 
-        <section className="w-full flex bg-gradient-to-b from-galileoPurple-400 to-galileoPurple-900 relative min-h-[75vh]" id="aboutSection">
+        <hr className="w-60 h-1 mx-auto my-4 bg-gray-100/30 border-0 rounded hidden md:block" />
+
+        <section className="relative w-full md:h-[90vh]" id="heroSection-pt2">
+          <ContentContainer className="flex flex-row text-center md:text-left relative z-10 py-3 md:pb-24">
+            <div className="flex flex-col justify-center gap-5 text-white px-3 md:px-6 md:w-2/3 lg:px-8 ">
+              <div className="mx-auto block md:hidden">
+                <Image
+                  src="/rocket.jpg"
+                  alt="Luneta: GalileoSoft visando novos horizontes"
+                  width={300}
+                  height={300}
+                />
+              </div>
+              <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
+                A tecnologia é o combustível que leva as empresas a desbravar novos horizontes.
+              </h1>
+              <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
+                Somos apaixonados por explorar o cosmos digital em busca de tecnologias para facilitar a sua gestão.
+              </p>
+              <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
+                Conte com nossa equipe experiente e dedicada para trasnformar suas metas em realidade e simplificar a gestão do seu negócio.
+                Juntos, vamos algançar horizontes além da imaginação.
+              </p>
+            </div>
+            <div className="mx-auto my-auto hidden md:block">
+              <Image
+                src="/home-view2-luneta-colorida.png"
+                alt="Luneta: GalileoSoft visando novos horizontes"
+                width={400}
+                height={400}
+              />
+            </div>
+          </ContentContainer>
+        </section>
+
+        <section className="w-full flex bg-gradient-to-b from-galileoPurple-400 to-galileoPurple-900 relative min-h-[75vh] overflow-x-scroll no-scrollbar" id="aboutSection">
           <ContentContainer className="flex flex-col my-auto py-6 z-10">
             <h1 className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
               Simplificamos a sua Gestão
@@ -109,14 +149,14 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-5 mt-10">
               <p className="text-lg leading-5 text-center font-semibold md:w-1/2 mx-auto">
-                Estamos prontos para expandir os horizontes do seu negócio, vamos juntos nessa jornada?
+                Revolucione sua gestão!
               </p>
               <LightButton
                 target="_blank"
-                href="https://calendly.com/galileosoft-br"
+                href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o"
                 className="mx-auto"
               >
-                Falar com especialista!
+                Fale conosco
               </LightButton>
             </div>
           </ContentContainer>
