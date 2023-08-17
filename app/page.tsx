@@ -119,7 +119,7 @@ export default function Home() {
               </p>
               <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
                 Conte com nossa equipe experiente e dedicada para trasnformar suas metas em realidade e simplificar a gestão do seu negócio.
-                Juntos, vamos algançar horizontes além da imaginação.
+                Juntos, vamos alcançar horizontes além da imaginação.
               </p>
             </div>
             <div className="mx-auto my-auto hidden md:block">

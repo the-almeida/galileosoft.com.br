@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer x-componentname="Footer" className="text-white relative bg-galileoPurple-300 z-20 space-y-6 py-6">
-      <div className="relative h-10">
+      <div className="relative h-10 md:hidden">
         <Image
           src="/logoGalileoSoft.svg"
           alt="GalileoSoft Logo"
@@ -23,7 +23,7 @@ export default function Footer() {
         </strong>
       </p>
 
-      <hr className="md:hidden border-t-2 border-purple-500 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto" />
+      <hr className="md:hidden border-t-2 border-galileoPurple-2 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto" />
 
       <ContentContainer className="flex flex-col md:flex-row text-center md:text-left">
         <div className="flex-1 space-y-3">
@@ -36,7 +36,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <hr className="md:hidden border-t-2 border-purple-500 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto my-4" />
+        <hr className="md:hidden border-t-2 border-galileoPurple-2 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto my-4" />
 
         <div className="flex-1 space-y-3">
           <h3 className="text-center text-xl font-medium mb-3">Mapa do Site:</h3>
@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <hr className="md:hidden border-t-2 border-purple-500 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto my-4" />
+        <hr className="md:hidden border-t-2 border-galileoPurple-2 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto my-4" />
 
         <div className="flex-1 space-y-3">
           <h3 className="text-center text-lg font-medium mb-3">Canais de Contato:</h3>
@@ -128,7 +128,7 @@ export default function Footer() {
           </div>
         </div>
       </ContentContainer>
-      <hr className="border-t-2 border-purple-500 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto my-4" />
+      <hr className="border-t-2 border-galileoPurple-2 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto my-4" />
       <Link
         target="_blank"
         href="https://thealmeida.online"
