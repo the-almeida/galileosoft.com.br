@@ -1,7 +1,7 @@
 interface CardProps {
   children: React.ReactNode;
   className?: string;
-  bgColor?: string
+  bgColor?: string;
 }
 
 export default function Card({ children, className = '', bgColor = 'bg-slate-100' }: CardProps) {

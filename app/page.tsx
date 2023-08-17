@@ -1,5 +1,4 @@
 import Image from "next/image";
-import BackgroundImage from "@/components/BackgroundImage"
 import Card from "@/components/Card";
 import Carousel from "@/components/Carousel";
 import ContentContainer from "@/components/ContentContainer";
@@ -163,7 +162,7 @@ export default function Home() {
           </ContentContainer>
         </section>
 
-        <section className="relative w-full bg-galileoPurple-900">
+        <section className="relative w-full bg-galileoPurple-900" id="contactForm">
           <ContentContainer className="w-full grid lg:grid-cols-2 gap-x-20 gap-y-2 justify-between items-start relative z-10 my-10">
             <div className="lg:col-span-1">
               <h1 className="text-5xl font-semibold pt-3 pb-8">Acelere sua empresa com soluções tecnológicas!
@@ -181,8 +180,6 @@ export default function Home() {
             </div>
           </ContentContainer>
         </section>
-
-
       </main>
     </>
   )
