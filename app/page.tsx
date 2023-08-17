@@ -100,7 +100,7 @@ export default function Home() {
           </ContentContainer>
         </section>
 
-        <section className="relative flex w-full md:min-h-[75vh] pt-[5vh]" id="heroSection-pt2">
+        <section className="relative flex w-full md:min-h-[75vh] pt-[5vh]" id="whyGalileoSoft">
           <ContentContainer className="flex flex-row text-center md:text-left relative z-10 py-3 my-auto">
             <div className="flex flex-col justify-center gap-5 text-white px-3 md:px-6 md:w-2/3 lg:px-8 ">
               <div className="mx-auto block md:hidden">
@@ -133,7 +133,7 @@ export default function Home() {
           </ContentContainer>
         </section>
 
-        <section className="w-full flex bg-gradient-to-b from-galileoPurple-400 to-galileoPurple-900 relative min-h-[75vh] overflow-x-scroll no-scrollbar" id="aboutSection">
+        <section className="w-full flex bg-gradient-to-b from-galileoPurple-400 to-galileoPurple-900 relative min-h-[75vh] overflow-x-scroll no-scrollbar" id="howWeWork">
           <ContentContainer className="flex flex-col my-auto py-6 z-10">
             <h1 className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
               Simplificamos a sua Gestão
