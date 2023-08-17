@@ -6,10 +6,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer x-componentname="Footer" className="relative bg-purple-200 z-20 space-y-6 py-6">
+    <footer x-componentname="Footer" className="text-white relative bg-galileoPurple-300 z-20 space-y-6 py-6">
       <div className="relative h-10">
         <Image
-          src="/logoGalileoSoftPreto.svg"
+          src="/logoGalileoSoft.svg"
           alt="GalileoSoft Logo"
           fill
           sizes="250px"
@@ -26,7 +26,7 @@ export default function Footer() {
       <hr className="md:hidden border-t-2 border-purple-500 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto" />
 
       <ContentContainer className="flex flex-col md:flex-row text-center md:text-left">
-        <div className="text-black flex-1 space-y-3">
+        <div className="flex-1 space-y-3">
           <h3 className="text-center text-xl font-medium mb-3">Onde nos encontrar:</h3>
           <p className="text-center text-base">
             <strong>Endereço:</strong> Rua Pioneira Vergínia Maria Fecchio, 880 - Maringá, PR
@@ -38,7 +38,7 @@ export default function Footer() {
 
         <hr className="md:hidden border-t-2 border-purple-500 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto my-4" />
 
-        <div className="text-black flex-1 space-y-3">
+        <div className="flex-1 space-y-3">
           <h3 className="text-center text-xl font-medium mb-3">Mapa do Site:</h3>
           <div className="flex flex-col space-y-2">
             <Link
@@ -48,14 +48,14 @@ export default function Footer() {
             >
               Home
             </Link>
-            {/* <Link
+            <Link
               target="_blank"
-              href="/produtos"
+              href="/servicos"
               className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
             >
-              Produtos
+              Serviços
             </Link>
-            <Link
+            {/* <Link
               target="_blank"
               href="/faq"
               className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
@@ -74,7 +74,7 @@ export default function Footer() {
 
         <hr className="md:hidden border-t-2 border-purple-500 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto my-4" />
 
-        <div className="text-black flex-1 space-y-3">
+        <div className="flex-1 space-y-3">
           <h3 className="text-center text-lg font-medium mb-3">Canais de Contato:</h3>
           <div className="w-fit mx-auto grid grid-cols-2 lg:grid-cols-4">
             <Link
@@ -83,8 +83,8 @@ export default function Footer() {
               className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
             >
               <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
-                <span className="rounded-full p-4 bg-purple-800 w-fit mx-auto hover:bg-purple-600">
-                  <MdWhatsapp size={20} className="text-white" />
+                <span className="rounded-full p-4 bg-white w-fit mx-auto hover:bg-gray-300">
+                  <MdWhatsapp size={24} className="text-galileoPurple-300" />
                 </span>
                 <p className="my-2 text-center">Whatsapp</p>
               </div>
@@ -95,8 +95,8 @@ export default function Footer() {
               className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
             >
               <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
-                <span className="rounded-full p-4 bg-purple-800 w-fit mx-auto hover:bg-purple-600">
-                  <MdPhone size={20} className="text-white" />
+                <span className="rounded-full p-4 bg-white w-fit mx-auto hover:bg-gray-300">
+                  <MdPhone size={24} className="text-galileoPurple-300" />
                 </span>
                 <p className="my-2 text-center">Ligação</p>
               </div>
@@ -107,8 +107,8 @@ export default function Footer() {
               className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
             >
               <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
-                <span className="rounded-full p-4 bg-purple-800 w-fit mx-auto hover:bg-purple-600">
-                  <MdFacebook size={20} className="text-white" />
+                <span className="rounded-full p-4 bg-white w-fit mx-auto hover:bg-gray-300">
+                  <MdFacebook size={24} className="text-galileoPurple-300" />
                 </span>
                 <p className="my-2 text-center">Facebook</p>
               </div>
@@ -119,8 +119,8 @@ export default function Footer() {
               className="cursor-pointer mx-3 md:mx-6 hover:scale-110 transform transition duration-500"
             >
               <div className="flex flex-col w-fit mx-auto hover:underline hover:underline-offset-4">
-                <span className="rounded-full p-4 bg-purple-800 w-fit mx-auto hover:bg-purple-600">
-                  <FaInstagram size={20} className="text-white" />
+                <span className="rounded-full p-4 bg-white w-fit mx-auto hover:bg-gray-300">
+                  <FaInstagram size={24} className="text-galileoPurple-300" />
                 </span>
                 <p className="my-2 text-center">Instagram</p>
               </div>

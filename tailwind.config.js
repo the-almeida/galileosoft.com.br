@@ -8,15 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        galileoGray: {
+          400: '#aee6f420'
+        },
         galileoPurple: {
           200: '#eaddd7',
+          300: '#382B44',
           400: '#372157',
           700: '#977669',
           900: '#0d0219',
         },
-        galileoGray: {
-          400: '#aee6f420'
-        }
       },
       backgroundImage: {
         'colored-waves': "url('/bgImageWaves.svg')"
