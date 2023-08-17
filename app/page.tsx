@@ -1,5 +1,4 @@
 import Image from "next/image";
-import BackgroundImage from "@/components/BackgroundImage"
 import Card from "@/components/Card";
 import Carousel from "@/components/Carousel";
 import ContentContainer from "@/components/ContentContainer";
