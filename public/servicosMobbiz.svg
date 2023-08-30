@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220">
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
   <defs>
     <style>
       .cls-1 {
-        fill: #fff;
+        fill: #793bcf;
+        stroke-width: 0px;
       }
     </style>
   </defs>
-  <circle class="cls-1" cx="50.61" cy="50.64" r="9.45"/>
-  <circle class="cls-1" cx="54.5" cy="86.22" r="9.45"/>
-  <circle class="cls-1" cx="58.39" cy="121.81" r="9.45"/>
-  <circle class="cls-1" cx="169.39" cy="169.36" r="9.45"/>
-  <circle class="cls-1" cx="133.69" cy="165.37" r="9.45"/>
-  <circle class="cls-1" cx="97.99" cy="161.38" r="9.45"/>
-  <circle class="cls-1" cx="123.45" cy="96.23" r="9.45"/>
-  <circle class="cls-1" cx="142.35" cy="117.36" r="9.45"/>
-  <circle class="cls-1" cx="157.92" cy="141.83" r="9.45"/>
-  <circle class="cls-1" cx="103.06" cy="116.62" r="9.45"/>
-  <circle class="cls-1" cx="120.17" cy="139.37" r="9.45"/>
-  <circle class="cls-1" cx="102.32" cy="78.44" r="9.45"/>
-  <circle class="cls-1" cx="77.85" cy="62.87" r="9.45"/>
-  <circle class="cls-1" cx="80.26" cy="99.94" r="9.45"/>
-  <circle class="cls-1" cx="82.67" cy="137.01" r="9.45"/>
-  <circle class="cls-1" cx="62.28" cy="157.39" r="9.45"/>
+  <circle class="cls-1" cx="162.65" cy="162.77" r="37.77"/>
+  <circle class="cls-1" cx="178.21" cy="304.98" r="37.77"/>
+  <circle class="cls-1" cx="193.76" cy="447.19" r="37.77"/>
+  <circle class="cls-1" cx="637.35" cy="637.22" r="37.77"/>
+  <circle class="cls-1" cx="494.67" cy="621.28" r="37.77"/>
+  <circle class="cls-1" cx="351.99" cy="605.34" r="37.77"/>
+  <circle class="cls-1" cx="453.74" cy="344.98" r="37.77"/>
+  <circle class="cls-1" cx="529.29" cy="429.42" r="37.77"/>
+  <circle class="cls-1" cx="591.5" cy="527.18" r="37.77"/>
+  <circle class="cls-1" cx="372.26" cy="426.45" r="37.77"/>
+  <circle class="cls-1" cx="440.64" cy="517.38" r="37.77"/>
+  <circle class="cls-1" cx="369.3" cy="273.88" r="37.77"/>
+  <circle class="cls-1" cx="271.53" cy="211.66" r="37.77"/>
+  <circle class="cls-1" cx="281.16" cy="359.79" r="37.77"/>
+  <circle class="cls-1" cx="290.79" cy="507.93" r="37.77"/>
+  <circle class="cls-1" cx="209.31" cy="589.4" r="37.77"/>
 </svg>

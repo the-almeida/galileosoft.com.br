@@ -14,7 +14,7 @@ export default function Navbar() {
 
   const navLinks = [
     {href:"/", text: "Home"},
-    // {href:"/produtos", text: "Produtos"},
+    {href:"/produtos", text: "Produtos"},
     {href:"/contato", text: "Contato"},
   ]
 
@@ -22,7 +22,7 @@ export default function Navbar() {
     <nav x-componentname="Navbar" className="bg-purple-900/40 fixed w-full z-20 shadow-md backdrop-blur-sm">
       <div className="flex justify-between max-w-7xl h-16 mx-auto px-6 lg:px-8">
         <div className="flex items-center">
-          <Link href="#" className="fill-white text-2xl font-bold relative w-[210px] h-full">
+          <Link href="/contato" className="fill-white text-2xl font-bold relative w-[210px] h-full">
             <Image 
               src="/logoGalileoSoft.svg" 
               alt="GalileoSoft Logo" 
