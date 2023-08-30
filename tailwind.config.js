@@ -11,10 +11,16 @@ module.exports = {
         galileoGray: {
           400: '#aee6f420'
         },
+        galileoGreen: {
+          500: '#79F725'
+        },
         galileoPurple: {
+          100: '#e4e2ff',
           200: '#eaddd7',
+          250: '#EDE8F1',
           300: '#382B44',
           400: '#372157',
+          500: '#793BCF',
           700: '#977669',
           900: '#0d0219',
         },
