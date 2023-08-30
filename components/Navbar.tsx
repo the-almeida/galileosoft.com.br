@@ -14,7 +14,7 @@ export default function Navbar() {
 
   const navLinks = [
     {href:"/", text: "Home"},
-    {href:"/produtos", text: "Produtos"},
+    {href:"/servicos", text: "Serviços"},
     {href:"/contato", text: "Contato"},
   ]
 
