@@ -3,7 +3,7 @@ import Card from "@/components/Card";
 import Carousel from "@/components/Carousel";
 import ContentContainer from "@/components/ContentContainer";
 import ContactForm from "@/components/ContactForm"
-import LightButton from "@/components/GradientButton";
+import ButtonOrange from "@/components/ButtonOrange";
 import Particles from "@/components/Particles";
 
 export default function Home() {
@@ -85,17 +85,17 @@ export default function Home() {
                   height={300}
                 />
               </div>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
                 Explore um universo de possibilidades!
               </h1>
               <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
                 A sinergia perfeita entre tecnologia e gestão para alcançar resultados extraordinários.
               </p>
-              <LightButton target="_blank" href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o" className="mx-auto md:mr-auto" >
+              <ButtonOrange target="_blank" href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o" className="mr-auto" >
                 Agendar reunião
-              </LightButton>
+              </ButtonOrange>
             </div>
-            <div className="scroll-down hidden md:block" />
+            <a href="#whyGalileoSoft" className="scroll-down hidden md:block h-4 w-4" />
           </ContentContainer>
         </section>
 
@@ -110,7 +110,7 @@ export default function Home() {
                   height={300}
                 />
               </div>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
                 A tecnologia é o combustível que leva as empresas a desbravar novos horizontes.
               </h1>
               <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
@@ -134,7 +134,7 @@ export default function Home() {
 
         <section className="w-full flex bg-gradient-to-b from-galileoPurple-400 to-galileoPurple-900 relative min-h-[75vh] overflow-x-scroll no-scrollbar" id="howWeWork">
           <ContentContainer className="flex flex-col my-auto py-6 z-10">
-            <h1 className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 text-center">
               Simplificamos a sua Gestão
               <br />
               <span className="text-xl md:text-2xl lg:text-4xl xl:text-5xl font-medium mb-6">através da tecnologia</span>
@@ -148,16 +148,13 @@ export default function Home() {
               </Carousel>
             </div>
             <div className="flex flex-col gap-5 mt-10">
-              <p className="text-lg leading-5 text-center font-semibold md:w-1/2 mx-auto">
-                Revolucione sua gestão!
-              </p>
-              <LightButton
+              <ButtonOrange
                 target="_blank"
                 href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o"
                 className="mx-auto"
               >
                 Fale conosco
-              </LightButton>
+              </ButtonOrange>
             </div>
           </ContentContainer>
         </section>
@@ -165,7 +162,8 @@ export default function Home() {
         <section className="relative w-full bg-galileoPurple-900" id="contactForm">
           <ContentContainer className="w-full grid lg:grid-cols-2 gap-x-20 gap-y-2 justify-between items-start relative z-10 my-10">
             <div className="lg:col-span-1">
-              <h1 className="text-5xl font-semibold pt-3 pb-8">Acelere sua empresa com soluções tecnológicas!
+              <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 pt-3 pb-8">
+                Acelere sua empresa com soluções tecnológicas!
               </h1>
               <p className="text-2xl text-gray-200 font-medium pb-3">
                 Cadastre-se e descubra como a tecnologia pode revolucionar sua gestão.
@@ -173,7 +171,7 @@ export default function Home() {
             </div>
             <div className="lg:col-span-1 flex flex-col justify-between">
               <Card>
-                <h1 className="text-purple-950 text-3xl text-left font-semibold mb-4">Seja um case de sucesso</h1>
+                <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-left font-semibold mb-4 text-purple-950 ">Seja um case de sucesso</h1>
                 <ContactForm />
               </Card>
               <p className="text-center text-md font-semibold opacity-80 px-5 mt-4 lg:mt-0">Ao enviar esse formulário, você concorda em receber contatos da GalileoSoft.</p>

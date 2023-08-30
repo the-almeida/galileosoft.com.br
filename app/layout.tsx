@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt">
-      <body className={inter.className}>
+    <html className='scroll-smooth' lang="pt">
+      <body className={`scroll-smooth ${inter.className}`}>
         <Navbar />
         {children}
         <Footer />

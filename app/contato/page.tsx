@@ -13,9 +13,9 @@ export default function Contato() {
         <BackgroundImage src="/bgImageWaves.svg" className="-mt-20 opacity-75" />
         <ContentContainer className="w-full grid grid-cols-2 gap-x-20 gap-y-2 justify-between items-start relative z-10 my-10">
           <div>
-            <span className="text-2xl font-semibold text-green-500">ENTRE EM CONTATO</span>
-            <h1 className="text-6xl font-semibold pt-3 pb-8">Pronto para modernizar sua empresa?</h1>
-            <p className="text-2xl text-gray-200 font-medium">
+            <span className="text-xl md:text-2xl font-semibold text-green-500">ENTRE EM CONTATO</span>
+            <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl mb-4 font-semibold pt-3 pb-8">Pronto para modernizar sua empresa?</h1>
+            <p className="text-xl md:text-2xl text-gray-200 font-medium">
               Fornecemos diversos produtos que são verdadeiros campeões seus segmentos com a garantia de customização completa para atender seu negócio.
             </p>
           </div>
