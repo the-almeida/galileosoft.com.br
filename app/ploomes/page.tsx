@@ -1,0 +1,254 @@
+import Image from "next/image";
+import ButtonOrange from "@/components/ButtonOrange";
+import ButtonGreen from "@/components/ButtonGreen";
+import Card from "@/components/Card";
+import Carousel from "@/components/Carousel";
+import ContentContainer from "@/components/ContentContainer";
+import ContactForm from "@/components/ContactForm"
+import Particles from "@/components/Particles";
+import ButtonPurple from "@/components/ButtonPurple";
+
+export default function Ploomes() {
+
+  const cardsLightSection = [
+    <Card key={'crm'} bgColor="bg-white">
+      <div className="relative h-28 w-28 mx-auto mb-6">
+        <Image
+          src="/iconGestaoInteligente.png"
+          alt="Ícone Gestão Inteligente"
+          className="object-contain absolute"
+          fill
+          sizes="112px"
+        />
+      </div>
+      <h3 className="text-black text-2xl font-bold text-center mb-2">
+        Conte com um CRM altamente customizável, que se adapta facilmente às particularidades do seu negócio.
+      </h3>
+    </Card>,
+    <Card key={'centralizedInfos'} bgColor="bg-white">
+      <div className="relative h-28 w-28 mx-auto mb-6">
+        <Image
+          src="/iconMaisDoQueSoftware.png"
+          alt="Ícone Gestão Inteligente"
+          className="object-contain absolute"
+          fill
+          sizes="112px"
+        />
+      </div>
+      <h3 className="text-black text-2xl font-bold text-center mb-2">
+        Centralize todas as informações de seus clientes e mantenha um histórico de comunicação completo e organizado.
+      </h3>
+    </Card>,
+    <Card key={'customizableProposals'} bgColor="bg-white">
+      <div className="relative h-28 w-28 mx-auto mb-6">
+        <Image
+          src="/iconInovacaoConstante.png"
+          alt="Ícone Gestão Inteligente"
+          className="object-contain absolute"
+          fill
+          sizes="112px"
+        />
+      </div>
+      <h3 className="text-black text-2xl font-bold text-center mb-2">
+        Crie propostas encantadoras e parametrizadas. Automatize a geração de propostas e melhore seu processo de vendas.
+      </h3>
+    </Card>
+  ];
+
+  const cardsDarkSection = [
+    <Card key={'crm'} bgColor="bg-white">
+      <div className="relative h-28 w-28 mx-auto mb-6">
+        <Image
+          src="/iconGestaoInteligente.png"
+          alt="Ícone Gestão Inteligente"
+          className="object-contain absolute"
+          fill
+          sizes="112px"
+        />
+      </div>
+      <h3 className="text-black text-2xl font-bold text-center mb-2">
+        Organize sua base de clientes, segmente leads, filtre e visualize de modo intuitivo.
+      </h3>
+    </Card>,
+    <Card key={'centralizedInfos'} bgColor="bg-white">
+      <div className="relative h-28 w-28 mx-auto mb-6">
+        <Image
+          src="/iconMaisDoQueSoftware.png"
+          alt="Ícone Gestão Inteligente"
+          className="object-contain absolute"
+          fill
+          sizes="112px"
+        />
+      </div>
+      <h3 className="text-black text-2xl font-bold text-center mb-2">
+        Tenha controle total sob seus processos de vendas através de um funil de vendas visual.
+      </h3>
+    </Card>,
+    <Card key={'customizableProposals'} bgColor="bg-white">
+      <div className="relative h-28 w-28 mx-auto mb-6">
+        <Image
+          src="/iconInovacaoConstante.png"
+          alt="Ícone Gestão Inteligente"
+          className="object-contain absolute"
+          fill
+          sizes="112px"
+        />
+      </div>
+      <h3 className="text-black text-2xl font-bold text-center mb-2">
+        Integre e-mail, agenda, sistemas de marketing, ERPs e muito mais.
+      </h3>
+    </Card>
+  ];
+
+  return (
+    <>
+      <main className="relative flex flex-col items-center justify-between bg-galileoPurple-400">
+        <Particles
+          className="fixed animate-fade-in z-10"
+          quantity={200}
+        />
+        <div className="absolute right-[10vw] w-[40vw] h-[95vh] hidden md:block">
+          <Image
+            src="/rocket.jpg"
+            alt="Foguete decolando"
+            className="object-contain absolute"
+            fill
+            sizes="50vw"
+          />
+        </div>
+        <section className="py-10 md:py-3 h-[95vh] relative w-full" id="ploomes-heroSection">
+          <ContentContainer className="flex flex-row text-center relative z-10 pt-16 md:text-left">
+            <div className="flex flex-col justify-center gap-5 text-white px-3 md:px-6 lg:px-8 md:w-2/3">
+              <div className="mx-auto block md:hidden">
+                <Image
+                  src="/home-view2-luneta-colorida.png"
+                  alt="Luneta: GalileoSoft visando novos horizontes"
+                  width={300}
+                  height={300}
+                />
+              </div>
+              <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
+                Organize sua gestão e alcance <span className="text-galileoGreen-300"> Resultados Reais</span>
+              </h1>
+              <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
+                Tenha o controle completo e integrado da sua equipe de atendimento em seus canais de comunicação.
+              </p>
+              <ButtonGreen target="_blank" href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o" className="mr-auto" >
+                Agendar reunião
+              </ButtonGreen>
+            </div>
+          </ContentContainer>
+        </section>
+
+        <section className="relative flex w-full md:min-h-[75vh] pt-[5vh] bg-galileoPurple-100" id="ploomes-demoSection">
+          <ContentContainer className="flex flex-row text-center md:text-left relative z-10 py-3 my-auto">
+            <div className="flex flex-col justify-center gap-5 text-black px-3 md:px-6 md:w-2/3 lg:px-8 ">
+              <div className="mx-auto block md:hidden">
+                <Image
+                  src="/rocket.jpg"
+                  alt="Luneta: GalileoSoft visando novos horizontes"
+                  width={300}
+                  height={300}
+                />
+              </div>
+              <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
+                Experimente a <span className="text-galileoPurple-500">verdadeira revolução </span>no relacionamento com os clientes
+              </h1>
+              <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
+                Seja no gerenciamento de vendas, atendimento ao cliente ou acompanhamento de leads, revolucione sua engrenagem de vendas.
+              </p>
+              <ButtonPurple
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o"
+                className="mr-auto font-bold"
+              >
+                Agende uma Demonstração!
+              </ButtonPurple>
+            </div>
+            <div className="mx-auto my-auto hidden md:block">
+              <Image
+                src="/home-view2-luneta-colorida.png"
+                alt="Luneta: GalileoSoft visando novos horizontes"
+                width={400}
+                height={400}
+              />
+            </div>
+          </ContentContainer>
+        </section>
+
+        <section className="w-full flex bg-galileoPurple-100 relative min-h-[75vh] overflow-x-scroll no-scrollbar" id="ploomes-exclusiveBonuses-light">
+          <ContentContainer className="flex flex-col my-auto py-6 z-10">
+            <h1 className="text-black text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 text-center">
+              Clientes Ploomes têm
+              <br />
+              <span className="text-galileoPurple-500 text-xl md:text-2xl lg:text-4xl xl:text-5xl font-medium mb-6"> vantagens exclusivas:</span>
+            </h1>
+            <div className="hidden lg:flex gap-6 mt-10 text-white">
+              {cardsLightSection}
+            </div>
+            <div className="lg:hidden mt-10 text-white">
+              <Carousel>
+                {cardsLightSection}
+              </Carousel>
+            </div>
+          </ContentContainer>
+        </section>
+
+        <section className="w-full flex bg-galileoPurple-400 relative min-h-[75vh] overflow-x-scroll no-scrollbar" id="ploomes-exclusiveBonuses-dark">
+          <ContentContainer className="flex flex-col my-auto py-6 z-10">
+            <div className="hidden lg:flex gap-6 mt-10 text-white">
+              {cardsDarkSection}
+            </div>
+            <div className="lg:hidden mt-10 text-white">
+              <Carousel>
+                {cardsDarkSection}
+              </Carousel>
+            </div>
+            <div className="flex flex-col gap-5 my-10">
+              <ButtonGreen
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o"
+                className="mx-auto"
+              >
+                Quero saber mais!
+              </ButtonGreen>
+            </div>
+            <Card bgColor="bg-white">
+              <h1 className="text-galileoPurple-500 text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 text-center">Junte-se a milhares de empresas</h1>
+              <p className="text-black text-2xl font-medium pb-3">Simplifique suas vendas com o maior CRM latinoamericando</p>
+              <div className="flex flex-row justify-evenly w-100">
+                <img src="/notFound" alt="Logo Unimed" />
+                <img src="/notFound" alt="Logo Philips" />
+                <img src="/notFound" alt="Logo Intelbras" />
+                <img src="/notFound" alt="Logo Votorantim" />
+              </div>
+              <ButtonPurple 
+                target="_blank" 
+                href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o" 
+                className="mr-auto font-bold mt-6"
+              >
+                Seja o próximo
+              </ButtonPurple>
+            </Card>
+          </ContentContainer>
+        </section>
+
+        <section className="relative w-full bg-galileoPurple-400" id="contactForm">
+          <ContentContainer className="w-full grid grid-cols-1 gap-x-20 gap-y-2 justify-between items-start relative z-10 my-10">
+            <div className="flex flex-col justify-between max-w-[900px] mx-auto">
+              <Card>
+                <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-left font-semibold mb-4 text-purple-950">
+                  Acelere sua empresa com soluções tecnológicas!
+                </h1>
+                <p className="text-center text-md font-semibold opacity-80 px-5 mt-4 lg:mt-0 text-black">
+                  Cadastre-se e descubra como a tecnologia pode revolucionar sua gestão.
+                </p>
+                <ContactForm />
+              </Card>
+            </div>
+          </ContentContainer>
+        </section>
+      </main>
+    </>
+  )
+}
