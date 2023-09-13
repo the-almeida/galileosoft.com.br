@@ -14,8 +14,8 @@ export default function Ploomes() {
     <Card key={'crm'} bgColor="bg-white">
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
-          src="/iconGestaoInteligente.png"
-          alt="Ícone Gestão Inteligente"
+          src="/ploomes/iconCrm.png"
+          alt="Ícone CRM"
           className="object-contain absolute"
           fill
           sizes="112px"
@@ -28,8 +28,8 @@ export default function Ploomes() {
     <Card key={'centralizedInfos'} bgColor="bg-white">
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
-          src="/iconMaisDoQueSoftware.png"
-          alt="Ícone Gestão Inteligente"
+          src="/ploomes/iconCentralize.png"
+          alt="Ícone Centralize Informações"
           className="object-contain absolute"
           fill
           sizes="112px"
@@ -42,8 +42,8 @@ export default function Ploomes() {
     <Card key={'customizableProposals'} bgColor="bg-white">
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
-          src="/iconInovacaoConstante.png"
-          alt="Ícone Gestão Inteligente"
+          src="/ploomes/iconCrie.png"
+          alt="Ícone Criação de Propostas"
           className="object-contain absolute"
           fill
           sizes="112px"
@@ -59,8 +59,8 @@ export default function Ploomes() {
     <Card key={'crm'} bgColor="bg-white">
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
-          src="/iconGestaoInteligente.png"
-          alt="Ícone Gestão Inteligente"
+          src="/ploomes/iconOrganize.png"
+          alt="Ícone Organização de Clientes"
           className="object-contain absolute"
           fill
           sizes="112px"
@@ -73,8 +73,8 @@ export default function Ploomes() {
     <Card key={'centralizedInfos'} bgColor="bg-white">
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
-          src="/iconMaisDoQueSoftware.png"
-          alt="Ícone Gestão Inteligente"
+          src="/ploomes/iconControle.png"
+          alt="Ícone Controle seu processo de vendas"
           className="object-contain absolute"
           fill
           sizes="112px"
@@ -87,7 +87,7 @@ export default function Ploomes() {
     <Card key={'customizableProposals'} bgColor="bg-white">
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
-          src="/iconInovacaoConstante.png"
+          src="/ploomes/iconIntegre.png"
           alt="Ícone Gestão Inteligente"
           className="object-contain absolute"
           fill
@@ -107,13 +107,13 @@ export default function Ploomes() {
           className="fixed animate-fade-in z-10"
           quantity={200}
         />
-        <div className="absolute right-[10vw] w-[40vw] h-[95vh] hidden md:block">
+        <div className="absolute right-[5vw] w-[35vw] h-[95vh] hidden md:block">
           <Image
-            src="/rocket.jpg"
-            alt="Foguete decolando"
+            src="/ploomes/logoPloomes.svg"
+            alt="Logo Ploomes"
             className="object-contain absolute"
             fill
-            sizes="50vw"
+            sizes="35vw"
           />
         </div>
         <section className="py-10 md:py-3 h-[95vh] relative w-full" id="ploomes-heroSection">
@@ -145,13 +145,13 @@ export default function Ploomes() {
             <div className="flex flex-col justify-center gap-5 text-black px-3 md:px-6 md:w-2/3 lg:px-8 ">
               <div className="mx-auto block md:hidden">
                 <Image
-                  src="/rocket.jpg"
-                  alt="Luneta: GalileoSoft visando novos horizontes"
+                  src="/ploomes/demoMultiDevice.webp"
+                  alt="Demonstração ploomes multidevice"
                   width={300}
                   height={300}
                 />
               </div>
-              <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
                 Experimente a <span className="text-galileoPurple-500">verdadeira revolução </span>no relacionamento com os clientes
               </h1>
               <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
@@ -167,10 +167,10 @@ export default function Ploomes() {
             </div>
             <div className="mx-auto my-auto hidden md:block">
               <Image
-                src="/home-view2-luneta-colorida.png"
-                alt="Luneta: GalileoSoft visando novos horizontes"
-                width={400}
-                height={400}
+                src="/ploomes/demoMultiDevice.webp"
+                alt="Demonstração ploomes multidevice"
+                width={600}
+                height={600}
               />
             </div>
           </ContentContainer>
@@ -217,10 +217,32 @@ export default function Ploomes() {
               <h1 className="text-galileoPurple-500 text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 text-center">Junte-se a milhares de empresas</h1>
               <p className="text-black text-2xl font-medium pb-3">Simplifique suas vendas com o maior CRM latinoamericando</p>
               <div className="flex flex-row justify-evenly w-100">
-                <img src="/notFound" alt="Logo Unimed" />
-                <img src="/notFound" alt="Logo Philips" />
-                <img src="/notFound" alt="Logo Intelbras" />
-                <img src="/notFound" alt="Logo Votorantim" />
+                <Image 
+                  src="/ploomes/iconClienteUnimed.png" 
+                  alt="Logo Unimed" 
+                  width={100}
+                  height={30}
+                  className="h-7 my-auto"
+                />
+                <Image 
+                  src="/ploomes/iconClientePhilips.png" 
+                  alt="Logo Philips" 
+                  width={150}
+                  height={46}
+                  className="h-12 my-auto"
+                />
+                <Image 
+                  src="/ploomes/iconClienteIntelbras.webp" 
+                  alt="Logo Intelbras" 
+                  width={150}
+                  height={150}
+                />
+                <Image 
+                  src="/ploomes/iconClienteVotorantim.webp" 
+                  alt="Logo Votorantim" 
+                  width={150}
+                  height={150}
+                />
               </div>
               <ButtonPurple 
                 target="_blank" 
@@ -237,10 +259,10 @@ export default function Ploomes() {
           <ContentContainer className="w-full grid grid-cols-1 gap-x-20 gap-y-2 justify-between items-start relative z-10 my-10">
             <div className="flex flex-col justify-between max-w-[900px] mx-auto">
               <Card>
-                <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-left font-semibold mb-4 text-purple-950">
+                <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-4 text-purple-950 text-center">
                   Acelere sua empresa com soluções tecnológicas!
                 </h1>
-                <p className="text-center text-md font-semibold opacity-80 px-5 mt-4 lg:mt-0 text-black">
+                <p className="text-center text-md font-semibold opacity-80 px-5 mt-4 lg:mt-0 text-black mb-2">
                   Cadastre-se e descubra como a tecnologia pode revolucionar sua gestão.
                 </p>
                 <ContactForm />

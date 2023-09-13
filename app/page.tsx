@@ -110,7 +110,7 @@ export default function Home() {
                   height={300}
                 />
               </div>
-              <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
                 A tecnologia é o combustível que leva as empresas a desbravar novos horizontes.
               </h1>
               <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
@@ -134,7 +134,7 @@ export default function Home() {
 
         <section className="w-full flex bg-gradient-to-b from-galileoPurple-400 to-galileoPurple-900 relative min-h-[75vh] overflow-x-scroll no-scrollbar" id="howWeWork">
           <ContentContainer className="flex flex-col my-auto py-6 z-10">
-            <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 text-center">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 text-center">
               Simplificamos a sua Gestão
               <br />
               <span className="text-xl md:text-2xl lg:text-4xl xl:text-5xl font-medium mb-6">através da tecnologia</span>
@@ -162,7 +162,7 @@ export default function Home() {
         <section className="relative w-full bg-galileoPurple-900" id="contactForm">
           <ContentContainer className="w-full grid lg:grid-cols-2 gap-x-20 gap-y-2 justify-between items-start relative z-10 my-10">
             <div className="lg:col-span-1">
-              <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 pt-3 pb-8">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 pt-3 pb-8">
                 Acelere sua empresa com soluções tecnológicas!
               </h1>
               <p className="text-2xl text-gray-200 font-medium pb-3">
@@ -171,7 +171,7 @@ export default function Home() {
             </div>
             <div className="lg:col-span-1 flex flex-col justify-between">
               <Card>
-                <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl text-left font-semibold mb-4 text-purple-950 ">Seja um case de sucesso</h1>
+                <h1 className="text-2xl md:text-4xl lg:text-5xl text-left font-semibold mb-4 text-purple-950 ">Seja um case de sucesso</h1>
                 <ContactForm />
               </Card>
               <p className="text-center text-md font-semibold opacity-80 px-5 mt-4 lg:mt-0">Ao enviar esse formulário, você concorda em receber contatos da GalileoSoft.</p>
