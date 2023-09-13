@@ -121,8 +121,8 @@ export default function Ploomes() {
             <div className="flex flex-col justify-center gap-5 text-white px-3 md:px-6 lg:px-8 md:w-2/3">
               <div className="mx-auto block md:hidden">
                 <Image
-                  src="/home-view2-luneta-colorida.png"
-                  alt="Luneta: GalileoSoft visando novos horizontes"
+                  src="/ploomes/logoPloomes.svg"
+                  alt="Logo Ploomes"
                   width={300}
                   height={300}
                 />
@@ -217,36 +217,36 @@ export default function Ploomes() {
               <h1 className="text-galileoPurple-500 text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 text-center">Junte-se a milhares de empresas</h1>
               <p className="text-black text-2xl font-medium pb-3">Simplifique suas vendas com o maior CRM latinoamericando</p>
               <div className="flex flex-row justify-evenly w-100">
-                <Image 
-                  src="/ploomes/iconClienteUnimed.png" 
-                  alt="Logo Unimed" 
+                <Image
+                  src="/ploomes/iconClienteUnimed.png"
+                  alt="Logo Unimed"
                   width={100}
                   height={30}
                   className="h-7 my-auto"
                 />
-                <Image 
-                  src="/ploomes/iconClientePhilips.png" 
-                  alt="Logo Philips" 
+                <Image
+                  src="/ploomes/iconClientePhilips.png"
+                  alt="Logo Philips"
                   width={150}
                   height={46}
                   className="h-12 my-auto"
                 />
-                <Image 
-                  src="/ploomes/iconClienteIntelbras.webp" 
-                  alt="Logo Intelbras" 
+                <Image
+                  src="/ploomes/iconClienteIntelbras.webp"
+                  alt="Logo Intelbras"
                   width={150}
                   height={150}
                 />
-                <Image 
-                  src="/ploomes/iconClienteVotorantim.webp" 
-                  alt="Logo Votorantim" 
+                <Image
+                  src="/ploomes/iconClienteVotorantim.webp"
+                  alt="Logo Votorantim"
                   width={150}
                   height={150}
                 />
               </div>
-              <ButtonPurple 
-                target="_blank" 
-                href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o" 
+              <ButtonPurple
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o"
                 className="mr-auto font-bold mt-6"
               >
                 Seja o próximo

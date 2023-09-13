@@ -8,7 +8,7 @@ import ContactForm from "@/components/ContactForm"
 import Particles from "@/components/Particles";
 import ButtonPurple from "@/components/ButtonPurple";
 
-export default function Ploomes() {
+export default function Saurus() {
 
   const cardsLightSection = [
     <Card key={'dashboard'} bgColor="bg-white">
