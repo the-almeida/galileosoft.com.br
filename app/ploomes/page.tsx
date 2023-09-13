@@ -21,7 +21,7 @@ export default function Ploomes() {
           sizes="112px"
         />
       </div>
-      <h3 className="text-black text-2xl font-bold text-center mb-2">
+      <h3 className="text-black text-2xl font-medium text-center mb-2">
         Conte com um CRM altamente customizável, que se adapta facilmente às particularidades do seu negócio.
       </h3>
     </Card>,
@@ -35,7 +35,7 @@ export default function Ploomes() {
           sizes="112px"
         />
       </div>
-      <h3 className="text-black text-2xl font-bold text-center mb-2">
+      <h3 className="text-black text-2xl font-medium text-center mb-2">
         Centralize todas as informações de seus clientes e mantenha um histórico de comunicação completo e organizado.
       </h3>
     </Card>,
@@ -49,7 +49,7 @@ export default function Ploomes() {
           sizes="112px"
         />
       </div>
-      <h3 className="text-black text-2xl font-bold text-center mb-2">
+      <h3 className="text-black text-2xl font-medium text-center mb-2">
         Crie propostas encantadoras e parametrizadas. Automatize a geração de propostas e melhore seu processo de vendas.
       </h3>
     </Card>
@@ -66,7 +66,7 @@ export default function Ploomes() {
           sizes="112px"
         />
       </div>
-      <h3 className="text-black text-2xl font-bold text-center mb-2">
+      <h3 className="text-black text-2xl font-medium text-center mb-2">
         Organize sua base de clientes, segmente leads, filtre e visualize de modo intuitivo.
       </h3>
     </Card>,
@@ -80,7 +80,7 @@ export default function Ploomes() {
           sizes="112px"
         />
       </div>
-      <h3 className="text-black text-2xl font-bold text-center mb-2">
+      <h3 className="text-black text-2xl font-medium text-center mb-2">
         Tenha controle total sob seus processos de vendas através de um funil de vendas visual.
       </h3>
     </Card>,
@@ -94,7 +94,7 @@ export default function Ploomes() {
           sizes="112px"
         />
       </div>
-      <h3 className="text-black text-2xl font-bold text-center mb-2">
+      <h3 className="text-black text-2xl font-medium text-center mb-2">
         Integre e-mail, agenda, sistemas de marketing, ERPs e muito mais.
       </h3>
     </Card>
