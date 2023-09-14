@@ -1,5 +1,4 @@
 import Image from "next/image";
-import ButtonOrange from "@/components/ButtonOrange";
 import ButtonGreen from "@/components/ButtonGreen";
 import Card from "@/components/Card";
 import Carousel from "@/components/Carousel";
