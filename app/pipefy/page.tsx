@@ -68,51 +68,6 @@ export default function Pipefy() {
     </Card>
   ];
 
-  const cardsDarkSection = [
-    <Card key={'crm'} bgColor="bg-white">
-      <div className="relative h-28 w-28 mx-auto mb-6">
-        <Image
-          src="/pipefy/iconOrganize.png"
-          alt="Ícone Organização de Clientes"
-          className="object-contain absolute"
-          fill
-          sizes="112px"
-        />
-      </div>
-      <h3 className="text-black text-2xl font-medium text-center mb-2">
-        Organize sua base de clientes, segmente leads, filtre e visualize de modo intuitivo.
-      </h3>
-    </Card>,
-    <Card key={'centralizedInfos'} bgColor="bg-white">
-      <div className="relative h-28 w-28 mx-auto mb-6">
-        <Image
-          src="/pipefy/iconControle.png"
-          alt="Ícone Controle seu processo de vendas"
-          className="object-contain absolute"
-          fill
-          sizes="112px"
-        />
-      </div>
-      <h3 className="text-black text-2xl font-medium text-center mb-2">
-        Tenha controle total sob seus processos de vendas através de um funil de vendas visual.
-      </h3>
-    </Card>,
-    <Card key={'customizableProposals'} bgColor="bg-white">
-      <div className="relative h-28 w-28 mx-auto mb-6">
-        <Image
-          src="/pipefy/iconIntegre.png"
-          alt="Ícone Gestão Inteligente"
-          className="object-contain absolute"
-          fill
-          sizes="112px"
-        />
-      </div>
-      <h3 className="text-black text-2xl font-medium text-center mb-2">
-        Integre e-mail, agenda, sistemas de marketing, ERPs e muito mais.
-      </h3>
-    </Card>
-  ];
-
   return (
     <>
       <main className="relative flex flex-col items-center justify-between bg-galileoPurple-400">
