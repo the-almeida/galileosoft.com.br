@@ -39,42 +39,6 @@ export default function Footer() {
         <hr className="md:hidden border-t-2 border-galileoPurple-2 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto my-4" />
 
         <div className="flex-1 space-y-3">
-          <h3 className="text-center text-xl font-medium mb-3">Mapa do Site:</h3>
-          <div className="flex flex-col space-y-2">
-            <Link
-              target="_blank"
-              href="/"
-              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
-            >
-              Home
-            </Link>
-            <Link
-              target="_blank"
-              href="/servicos"
-              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
-            >
-              Serviços
-            </Link>
-            {/* <Link
-              target="_blank"
-              href="/faq"
-              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
-            >
-              FAQ
-            </Link> */}
-            <Link
-              target="_blank"
-              href="/contato"
-              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
-            >
-              Contato
-            </Link>
-          </div>
-        </div>
-
-        <hr className="md:hidden border-t-2 border-galileoPurple-2 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto my-4" />
-
-        <div className="flex-1 space-y-3">
           <h3 className="text-center text-lg font-medium mb-3">Canais de Contato:</h3>
           <div className="w-fit mx-auto grid grid-cols-2 lg:grid-cols-4">
             <Link
@@ -124,6 +88,94 @@ export default function Footer() {
                 </span>
                 <p className="my-2 text-center">Instagram</p>
               </div>
+            </Link>
+          </div>
+        </div>
+      </ContentContainer>
+
+      <hr className="md:hidden border-t-2 border-galileoPurple-2 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto" />
+
+      <ContentContainer className="flex flex-col md:flex-row text-center md:text-left">
+        <div className="flex-1 space-y-3">
+          <h3 className="text-center text-xl font-medium mb-3">Mapa do Site:</h3>
+          <div className="flex flex-col space-y-2">
+            <Link
+              target="_blank"
+              href="/"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
+            >
+              Home
+            </Link>
+            <Link
+              target="_blank"
+              href="/servicos"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
+            >
+              Serviços
+            </Link>
+            {/* <Link
+              target="_blank"
+              href="/faq"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
+            >
+              FAQ
+            </Link> */}
+            <Link
+              target="_blank"
+              href="/contato"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
+            >
+              Contato
+            </Link>
+          </div>
+        </div>
+
+        <hr className="md:hidden border-t-2 border-galileoPurple-2 w-1/2 lg:w-3/5 xl:w-2/5 mx-auto my-4" />
+
+        <div className="flex-1 space-y-3">
+          <h3 className="text-center text-xl font-medium mb-3">Nossos parceiros:</h3>
+          <div className="flex flex-col space-y-2">
+            <Link
+              target="_blank"
+              href="/pipefy"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
+            >
+              Pipefy
+            </Link>
+            <Link
+              target="_blank"
+              href="/saurus"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
+            >
+              Saurus
+            </Link>
+            <Link
+              target="_blank"
+              href="/ploomes"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
+            >
+              Ploomes
+            </Link>
+            <Link
+              target="_blank"
+              href="/mobbiz"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
+            >
+              Mobbiz
+            </Link>
+            <Link
+              target="_blank"
+              href="/erpflex"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
+            >
+              ERPFlex
+            </Link>
+            <Link
+              target="_blank"
+              href="/customDev"
+              className="cursor-pointer underline underline-offset-4 text-center hover:scale-110 transform transition duration-500"
+            >
+              Desenvolvimento Personalizado
             </Link>
           </div>
         </div>

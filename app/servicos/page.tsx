@@ -26,7 +26,6 @@ export default function Servicos() {
         Esta é a resposta para um relacionamento excepcional com seus clientes.
       </p>
       <Link
-        target="_blank"
         href="/ploomes"
         className="block text-white text-center text-lg font-bold rounded-lg mt-2 px-6 py-3  bg-galileoPurple-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
       >
@@ -48,7 +47,6 @@ export default function Servicos() {
         Transforme sua empresa em uma máquina de vendas!
       </p>
       <Link
-        target="_blank"
         href="/saurus"
         className="block text-white text-center text-lg font-bold rounded-lg mt-auto px-6 py-3 bg-galileoPurple-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
       >
@@ -70,7 +68,6 @@ export default function Servicos() {
         Gerencie pedidos 24 horas por dia sem perder o sono.
       </p>
       <Link
-        target="_blank"
         href="/mobbiz"
         className="block text-white text-center text-lg font-bold rounded-lg mt-auto px-6 py-3  bg-galileoPurple-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
       >
@@ -97,7 +94,6 @@ export default function Servicos() {
         A flexibilidade que impulsiona o crescimento do seu negócio.
       </p>
       <Link
-        target="_blank"
         href="/erpflex"
         className="block text-white text-center text-lg font-bold rounded-lg mt-2 px-6 py-3  bg-galileoPurple-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
       >
@@ -119,8 +115,7 @@ export default function Servicos() {
         Automatize processos e aumente a produtividade da sua equipe.
       </p>
       <Link
-        target="_blank"
-        href="/ploomes"
+        href="/pipefy"
         className="block text-white text-center text-lg font-bold rounded-lg mt-2 px-6 py-3  bg-galileoPurple-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
       >
         Estruture seus processos!
@@ -141,8 +136,7 @@ export default function Servicos() {
         Soluções sob medida para resolver problemas e otimizar sua dinâmica de trabalho.
       </p>
       <Link
-        target="_blank"
-        href="/ploomes"
+        href="/customDev"
         className="block text-white text-center text-lg font-bold rounded-lg mt-2 px-6 py-3  bg-galileoPurple-500 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800"
       >
         Saiba mais!
