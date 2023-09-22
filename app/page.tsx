@@ -5,6 +5,11 @@ import ContentContainer from "@/components/ContentContainer";
 import ContactForm from "@/components/ContactForm"
 import ButtonOrange from "@/components/ButtonOrange";
 import Particles from "@/components/Particles";
+import PrimaryHeading from "@/components/PrimaryHeading";
+import SecundaryText from "@/components/SecundaryText";
+import SecundaryHeading from "@/components/SecundaryHeading";
+import TertiaryHeading from "@/components/TertiaryHeading";
+import PrimaryText from "@/components/PrimaryText";
 
 export default function Home() {
 
@@ -19,12 +24,12 @@ export default function Home() {
           sizes="112px"
         />
       </div>
-      <h3 className="text-2xl font-bold text-center mb-2">
+      <PrimaryText className="text-center">
         Tecnologia a favor da Gestão
-      </h3>
-      <p className="leading-normal">
+      </PrimaryText>
+      <SecundaryText className="leading-normal">
         Diagnóstico e construção de soluções personalizadas para a sua gestão.
-      </p>
+      </SecundaryText>
     </Card>,
     <Card key={'contentInovation'} bgColor="bg-galileoGray-400">
       <div className="relative h-28 w-28 mx-auto mb-6">
@@ -36,10 +41,12 @@ export default function Home() {
           sizes="112px"
         />
       </div>
-      <h3 className="text-2xl font-bold text-center mb-2">Estratégia de Implementação</h3>
-      <p className="leading-normal">
+      <PrimaryText className="text-center">
+        Estratégia de Implementação
+      </PrimaryText>
+      <SecundaryText className="leading-normal">
         Análise completa de cada caso para uma implementação assertiva.
-      </p>
+      </SecundaryText>
     </Card>,
     <Card key={'moreThanSoftware'} bgColor="bg-galileoGray-400">
       <div className="relative h-28 w-28 mx-auto mb-6">
@@ -51,10 +58,12 @@ export default function Home() {
           sizes="112px"
         />
       </div>
-      <h3 className="text-2xl font-bold text-center mb-2">Assistência sob medida</h3>
-      <p className="leading-normal">
+      <PrimaryText className="text-center">
+        Assistência sob medida
+      </PrimaryText>
+      <SecundaryText className="leading-normal">
         Foco em atender necessidades específicas e resolver problemas.
-      </p>
+      </SecundaryText>
     </Card>
   ];
 
@@ -85,13 +94,17 @@ export default function Home() {
                   height={300}
                 />
               </div>
-              <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
+              <PrimaryHeading>
                 Explore um universo de possibilidades!
-              </h1>
-              <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
+              </PrimaryHeading>
+              <SecundaryText>
                 A sinergia perfeita entre tecnologia e gestão para alcançar resultados extraordinários.
-              </p>
-              <ButtonOrange target="_blank" href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o" className="mr-auto" >
+              </SecundaryText>
+              <ButtonOrange 
+                target="_blank" 
+                href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o" 
+                className="mx-auto md:mx-0" 
+              >
                 Agendar reunião
               </ButtonOrange>
             </div>
@@ -110,16 +123,16 @@ export default function Home() {
                   height={300}
                 />
               </div>
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
+              <SecundaryHeading >
                 A tecnologia é o combustível que leva as empresas a desbravar novos horizontes.
-              </h1>
-              <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
+              </SecundaryHeading>
+              <SecundaryText>
                 Somos apaixonados por explorar o cosmos digital em busca de tecnologias para facilitar a sua gestão.
-              </p>
-              <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
+              </SecundaryText>
+              <SecundaryText>
                 Conte com nossa equipe experiente e dedicada para transformar suas metas em realidade e simplificar a gestão do seu negócio.
                 Juntos, vamos alcançar horizontes além da imaginação.
-              </p>
+              </SecundaryText>
             </div>
             <div className="mx-auto my-auto hidden md:block">
               <Image
@@ -134,15 +147,14 @@ export default function Home() {
 
         <section className="w-full flex bg-gradient-to-b from-galileoPurple-400 to-galileoPurple-900 relative min-h-[75vh] overflow-x-scroll no-scrollbar" id="howWeWork">
           <ContentContainer className="flex flex-col my-auto py-6 z-10">
-            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 text-center">
+            <SecundaryHeading className="text-center mt-10">
               Simplificamos a sua Gestão
-              <br />
-              <span className="text-xl md:text-2xl lg:text-4xl xl:text-5xl font-medium mb-6">através da tecnologia</span>
-            </h1>
+              <TertiaryHeading className="hidden md:block"> <br /> através da tecnologia</TertiaryHeading>
+            </SecundaryHeading>
             <div className="hidden lg:flex gap-6 mt-10 text-white">
               {cards}
             </div>
-            <div className="lg:hidden mt-10 text-white">
+            <div className="lg:hidden lg:mt-10 text-white">
               <Carousel>
                 {cards}
               </Carousel>
@@ -160,21 +172,21 @@ export default function Home() {
         </section>
 
         <section className="relative w-full bg-galileoPurple-900" id="contactForm">
-          <ContentContainer className="w-full grid lg:grid-cols-2 gap-x-20 gap-y-2 justify-between items-start relative z-10 my-10">
-            <div className="lg:col-span-1">
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 pt-3 pb-8">
+          <ContentContainer className="w-full flex flex-col gap-x-20 gap-y-2 justify-between items-start relative z-10 my-10">
+            <div className="mx-auto">
+              <SecundaryHeading className="text-center">
                 Acelere sua empresa com soluções tecnológicas!
-              </h1>
-              <p className="text-2xl text-gray-200 font-medium pb-3">
+              </SecundaryHeading>
+              <SecundaryText className="text-center">
                 Cadastre-se e descubra como a tecnologia pode revolucionar sua gestão.
-              </p>
+              </SecundaryText>
             </div>
-            <div className="lg:col-span-1 flex flex-col justify-between">
+            <div className="mx-auto flex flex-col justify-between">
               <Card>
-                <h1 className="text-2xl md:text-4xl lg:text-5xl text-left font-semibold mb-4 text-purple-950 ">Seja um case de sucesso</h1>
+                <TertiaryHeading className="text-purple-950">Seja um case de sucesso</TertiaryHeading>
                 <ContactForm />
               </Card>
-              <p className="text-center text-md font-semibold opacity-80 px-5 mt-4 lg:mt-0">Ao enviar esse formulário, você concorda em receber contatos da GalileoSoft.</p>
+              <SecundaryText>Ao enviar esse formulário, você concorda em receber contatos da GalileoSoft.</SecundaryText>
             </div>
           </ContentContainer>
         </section>
