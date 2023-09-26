@@ -1,8 +1,7 @@
 "use client"
-import React from 'react';
-import { useState } from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import styles from './carousel.module.css';
+import { useState } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import styles from "./responsiveCarousel.module.css";
 
 
 interface CarouselProps {
@@ -10,57 +9,52 @@ interface CarouselProps {
 }
 
 export default function Carousel({ children: slides }: CarouselProps) {
-  const [activeSlide, setActiveSlide] = useState(0)
-  const maxSlides = slides.length
-  const slideWidthPercentage = 100 / maxSlides
-
-  const previousSlide = () => {
-    const prevSlide = activeSlide - 1
-    const lastSlide = slides.length - 1
-
-    if (prevSlide >= 0)
-      setActiveSlide(prevSlide)
-    else
-      setActiveSlide(lastSlide)
-  }
-  const nextSlide = () => {
-    const nextSlide = activeSlide + 1
-    const firstSlide = 0
-
-    if (nextSlide < slides.length)
-      setActiveSlide(nextSlide)
-    else
-      setActiveSlide(firstSlide)
-  }
-
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
   return (
-    <div className={styles.carousel}>
-      <div className={styles.slider} style={{ transform: `translate(-${activeSlide * slideWidthPercentage}%)`, width: `${maxSlides * 100}%` }}>
+    <div className={styles.wrapper}>
+      <i 
+        className="flex z-50"
+        onClick={() => {
+          setCurrentSlide((prevSlide) =>
+            prevSlide === 0 ? slides.length - 1 : prevSlide - 1
+          );
+        }}
+      >
+        <FaChevronLeft id="left"
+          className="text-black mx-auto my-auto"
+          size={25}
+        />
+      </i>
+      <ul 
+        className={styles.carousel}
+      >
         {slides.map((slide, index) => (
-          <div key={index} className={`${slide.props.className} ${styles.slide}`}>
+          <li 
+            key={index} 
+            className={`${slide.props.className} ${styles.card}`}
+            style={{
+              transform: `translateX(-${currentSlide * 100}%)`,
+              transition: "transform 0.3s ease-in-out",
+            }}
+          >
             {slide.props.children}
-          </div>
+          </li>
         ))}
-      </div>
-      <div className={styles.controls}>
-        <a
-          onClick={previousSlide}
-          className={styles.arrowLeft}
-        >
-          <FaChevronLeft
-            size={30}
-          />
-        </a>
-
-        <a
-          onClick={nextSlide}
-          className={styles.arrowRight}
-        >
-          <FaChevronRight
-            size={30}
-          />
-        </a>
-      </div>
+      </ul>
+      <i
+        className="flex z-50"
+        onClick={() => {
+          setCurrentSlide((prevSlide) =>
+            prevSlide === slides.length - 1 ? 0 : prevSlide + 1
+          );
+        }}
+      >
+        <FaChevronRight
+          className="text-black mx-auto my-auto"
+          size={25}
+        />
+      </i>
     </div>
   )
 }

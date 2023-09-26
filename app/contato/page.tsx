@@ -8,7 +8,6 @@ import { FaInstagram } from "react-icons/fa"
 import PrimaryHeading from "@/components/PrimaryHeading"
 import SecundaryText from "@/components/SecundaryText"
 import SecundaryHeading from "@/components/SecundaryHeading"
-import PrimaryText from "@/components/PrimaryText"
 
 export default function Contato() {
   return (
