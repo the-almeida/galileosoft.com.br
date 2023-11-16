@@ -9,6 +9,7 @@ interface ImageProps {
     opacityScale?: number;
     className?: string;
     alt?: string;
+    priority?: boolean;
 }
 
 function configOpacity(value: number | undefined): Opacity | Error{
@@ -22,7 +23,7 @@ function configOpacity(value: number | undefined): Opacity | Error{
     return value as Opacity
 }
 
-export default function BackgroundImage({ src = "/defaultBgImage.jpg", withOverlay = false, opacityScale, className, alt = ''}: ImageProps) {
+export default function BackgroundImage({ src = "/defaultBgImage.jpg", withOverlay = false, opacityScale, className, alt = '', priority = false}: ImageProps) {
     const overlayStyle = {
         backgroundColor: `rgb(88 28 135 / 1)`,
     };
@@ -40,6 +41,7 @@ export default function BackgroundImage({ src = "/defaultBgImage.jpg", withOverl
                     src={src}
                     alt={alt}
                     fill
+                    priority={priority}
                 />
             </div>
         </>
