@@ -1,10 +1,13 @@
-import Footer from '@/components/Footer'
 import './globals.css'
-
-import Navbar from '@/components/Navbar'
 
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Suspense } from 'react'
+
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -24,6 +27,12 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Suspense>
+          {process.env?.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+            <GoogleAnalytics ga_id=
+              {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+          ) : null}
+        </Suspense>
       </body>
     </html>
   )
