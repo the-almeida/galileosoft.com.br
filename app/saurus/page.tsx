@@ -311,12 +311,6 @@ export default function Saurus() {
           <ContentContainer className="w-full grid grid-cols-1 gap-x-20 gap-y-2 justify-between items-start relative z-10 my-10">
             <div className="flex flex-col justify-between max-w-[900px] mx-auto">
               <Card>
-                <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-4 text-purple-950 text-center">
-                  Acelere sua empresa com soluções tecnológicas!
-                </h1>
-                <p className="text-center text-md font-semibold opacity-80 px-5 mt-4 lg:mt-0 text-black mb-2">
-                  Cadastre-se e descubra como a tecnologia pode revolucionar sua gestão.
-                </p>
                 <ContactForm />
               </Card>
             </div>

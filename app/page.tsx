@@ -183,7 +183,6 @@ export default function Home() {
             </div>
             <div className="mx-auto flex flex-col justify-between">
               <Card>
-                <TertiaryHeading className="text-purple-950">Seja um case de sucesso</TertiaryHeading>
                 <ContactForm />
               </Card>
               <SecundaryText>Ao enviar esse formulário, você concorda em receber contatos da GalileoSoft.</SecundaryText>

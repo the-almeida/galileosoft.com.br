@@ -243,10 +243,6 @@ export default function Servicos() {
         <ContentContainer className="w-full grid lg:grid-cols-1 gap-x-20 gap-y-2 justify-between items-start relative z-10 my-10">
           <div className="flex flex-col justify-between md:w-[75%] mx-auto">
             <Card>
-              <h1 className="text-purple-950 text-3xl text-center font-semibold mb-4">Acelere sua empresa com soluções tecnológicas!</h1>
-              <p className="text-lg text-gray-700 font-medium pb-3">
-                Cadastre-se e descubra como a tecnologia pode revolucionar sua gestão.
-              </p>
               <ContactForm />
             </Card>
             <p className="text-center text-md font-semibold opacity-80 px-5 mt-4 lg:mt-0">Ao enviar esse formulário, você concorda em receber contatos da GalileoSoft.</p>

@@ -13,7 +13,7 @@ export default function Contato() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pt-16 bg-purple-950 text-white">
       <section className="relative w-full">
-        <BackgroundImage src="/bgImageWaves.svg" className="-mt-20 opacity-75" />
+        <BackgroundImage src="/bgImageWaves.svg" className="-mt-20 opacity-75" priority />
         <ContentContainer className="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-2 justify-between items-start relative z-10 my-10">
           <div>
             <span className="hidden lg:block text-xl md:text-2xl font-semibold text-green-500">ENTRE EM CONTATO</span>
@@ -23,7 +23,6 @@ export default function Contato() {
             </SecundaryText>
           </div>
           <Card>
-            <SecundaryHeading className="text-purple-950 text-center lg:text-left">Seja um case de sucesso</SecundaryHeading>
             <ContactForm />
           </Card>
           <div className="lg:col-start-2">
