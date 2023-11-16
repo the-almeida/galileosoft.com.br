@@ -19,7 +19,7 @@ export async function POST(req: NextRequest) {
       subject: "Novo contato no site - galileosoft.com.br"
     })
     
-    return NextResponse.json({message: "Mail sent!", maildData: mailSent}, {status: 200}) 
+    return NextResponse.json({message: "Mail sent!", mailData: mailSent}, {status: 200}) 
   } catch (error) {
     console.log(error);
     return new Response(null, { status: 500, statusText: `Mail not sent. Unexpected error: ${error}` })
