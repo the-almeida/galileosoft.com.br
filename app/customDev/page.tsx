@@ -101,7 +101,7 @@ export default function DesenvolvimentoPersonalizado() {
               <p className="text-base md:text-lg lg:text-xl xl:text-2xl">
                 Um time de desenvolvedores, prontos para solucionar qualquer desafio e impulsionar o crescimento do seu negócio!
               </p>
-              <ButtonGreen target="_blank" href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o" className="mr-auto" >
+              <ButtonGreen target="_blank" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0W9SITQXSJThFdp-tp2cnXP5gTjJm1f0SFHGGigsmOc52UED6cwJDza31WnNn-q8sH78jStiDl?gv=true" className="mr-auto" >
                 Agendar reunião
               </ButtonGreen>
             </div>

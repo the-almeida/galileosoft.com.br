@@ -102,7 +102,7 @@ export default function Home() {
               </SecundaryText>
               <ButtonOrange 
                 target="_blank" 
-                href="https://api.whatsapp.com/send?phone=5544997530950&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o" 
+                href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0W9SITQXSJThFdp-tp2cnXP5gTjJm1f0SFHGGigsmOc52UED6cwJDza31WnNn-q8sH78jStiDl?gv=true" 
                 className="mx-auto md:mx-0" 
               >
                 Agendar reunião
