@@ -7,9 +7,12 @@ import ContentContainer from "@/components/ContentContainer";
 import ButtonGreen from "@/components/ButtonGreen";
 
 export default function Servicos() {
-
   const cardsForClients = [
-    <Card key={'ploomes'} className="flex flex-col justify-between h-full text-black" bgColor="bg-white">
+    <Card
+      key={"ploomes"}
+      className="flex flex-col justify-between h-full text-black"
+      bgColor="bg-white"
+    >
       <div className="relative h-28 w-28 mx-auto pb-6 mb-6">
         <Image
           src="/servicosPloomes.svg"
@@ -19,9 +22,7 @@ export default function Servicos() {
           sizes="112px"
         />
       </div>
-      <h3 className="text-2xl font-bold text-center mb-2">
-        Ploomes
-      </h3>
+      <h3 className="text-2xl font-bold text-center mb-2">Ploomes</h3>
       <p className="leading-normal mb-4">
         Esta é a resposta para um relacionamento excepcional com seus clientes.
       </p>
@@ -32,7 +33,11 @@ export default function Servicos() {
         Encante seus clientes!
       </Link>
     </Card>,
-    <Card key={'saurus'} className="flex flex-col justify-between h-full text-black" bgColor="bg-white">
+    <Card
+      key={"saurus"}
+      className="flex flex-col justify-between h-full text-black"
+      bgColor="bg-white"
+    >
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
           src="/servicosSaurus.svg"
@@ -53,7 +58,11 @@ export default function Servicos() {
         Aumente suas vendas!
       </Link>
     </Card>,
-    <Card key={'mobbiz'} className="flex flex-col justify-between h-full text-black" bgColor="bg-white">
+    <Card
+      key={"mobbiz"}
+      className="flex flex-col justify-between h-full text-black"
+      bgColor="bg-white"
+    >
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
           src="/servicosMobbiz.svg"
@@ -73,11 +82,15 @@ export default function Servicos() {
       >
         Melhore suas entregas!
       </Link>
-    </Card>
+    </Card>,
   ];
 
   const cardsForManagement = [
-    <Card key={'erpFlex'} className="flex flex-col justify-between h-full text-black" bgColor="bg-galileoPurple-250">
+    <Card
+      key={"erpFlex"}
+      className="flex flex-col justify-between h-full text-black"
+      bgColor="bg-galileoPurple-250"
+    >
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
           src="/servicosErpflex.svg"
@@ -87,9 +100,7 @@ export default function Servicos() {
           sizes="112px"
         />
       </div>
-      <h3 className="text-2xl font-bold text-center mb-2">
-        ERPFlex
-      </h3>
+      <h3 className="text-2xl font-bold text-center mb-2">ERPFlex</h3>
       <p className="leading-normal">
         A flexibilidade que impulsiona o crescimento do seu negócio.
       </p>
@@ -100,7 +111,11 @@ export default function Servicos() {
         Melhore sua gestão!
       </Link>
     </Card>,
-    <Card key={'pipefy'} className="flex flex-col justify-between h-full text-black" bgColor="bg-galileoPurple-250">
+    <Card
+      key={"pipefy"}
+      className="flex flex-col justify-between h-full text-black"
+      bgColor="bg-galileoPurple-250"
+    >
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
           src="/servicosPipefy.svg"
@@ -121,7 +136,11 @@ export default function Servicos() {
         Estruture seus processos!
       </Link>
     </Card>,
-    <Card key={'devPersonalizado'} className="flex flex-col justify-between h-full text-black" bgColor="bg-galileoPurple-250">
+    <Card
+      key={"devPersonalizado"}
+      className="flex flex-col justify-between h-full text-black"
+      bgColor="bg-galileoPurple-250"
+    >
       <div className="relative h-28 w-28 mx-auto mb-6">
         <Image
           src="/servicosDevPersonalizado.svg"
@@ -131,9 +150,12 @@ export default function Servicos() {
           sizes="112px"
         />
       </div>
-      <h3 className="text-2xl font-bold text-center mb-2">Desenvolvimento Personalizado</h3>
+      <h3 className="text-2xl font-bold text-center mb-2">
+        Desenvolvimento Personalizado
+      </h3>
       <p className="leading-normal">
-        Soluções sob medida para resolver problemas e otimizar sua dinâmica de trabalho.
+        Soluções sob medida para resolver problemas e otimizar sua dinâmica de
+        trabalho.
       </p>
       <Link
         href="/customDev"
@@ -141,12 +163,15 @@ export default function Servicos() {
       >
         Saiba mais!
       </Link>
-    </Card>
+    </Card>,
   ];
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pt-16 bg-galileoPurple-900">
-      <section className="relative flex w-full min-h-[90vh] bg-galileoPurple-100" id="servicosHeroSection">
+      <section
+        className="relative flex w-full min-h-[90vh] bg-galileoPurple-100"
+        id="servicosHeroSection"
+      >
         <ContentContainer className="flex flex-row text-center md:text-left relative z-10 py-3 my-auto">
           <div className="flex flex-col justify-center gap-5 text-black px-3 md:px-6 md:w-2/3 lg:px-8 mx-auto">
             <div className="mx-auto block md:hidden">
@@ -158,16 +183,26 @@ export default function Servicos() {
               />
             </div>
             <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4">
-              Eleve sua empresa <span className="text-galileoPurple-500"> a um Novo Patamar! </span>
+              Eleve sua empresa{" "}
+              <span className="text-galileoPurple-500">
+                {" "}
+                a um Novo Patamar!{" "}
+              </span>
             </h1>
             <p className="text-base font-bold lg:text-lg xl:text-xl">
               Desbloqueie seu crescimento através da Tecnologia!
             </p>
             <div className="flex flex-row justify-center md:justify-start md:items-start space-x-5">
-              <ButtonGreen href="servicos#servicesToYourClients">
+              <ButtonGreen
+                scrollToId="servicesToYourClients"
+                href="servicos#servicesToYourClients"
+              >
                 Para seus clientes
               </ButtonGreen>
-              <ButtonGreen href="servicos#servicesToYourManagement">
+              <ButtonGreen
+                scrollToId="servicesToYourManagement"
+                href="servicos#servicesToYourManagement"
+              >
                 Para sua gestão
               </ButtonGreen>
             </div>
@@ -183,10 +218,17 @@ export default function Servicos() {
         </ContentContainer>
       </section>
 
-      <section className="w-full flex bg-galileoPurple-100 relative min-h-[75vh] overflow-x-scroll no-scrollbar pt-16" id="servicesToYourClients">
+      <section
+        className="w-full flex bg-galileoPurple-100 relative min-h-[75vh] overflow-x-scroll no-scrollbar pt-16"
+        id="servicesToYourClients"
+      >
         <ContentContainer className="flex flex-col my-auto py-6 z-10">
           <h1 className="text-center text-black text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold mb-4">
-            <span className="text-galileoPurple-500"> Experiências incríveis </span>geram clientes fiéis!
+            <span className="text-galileoPurple-500">
+              {" "}
+              Experiências incríveis{" "}
+            </span>
+            geram clientes fiéis!
           </h1>
           <p className="text-base text-black font-semibold text-center md:text-lg lg:text-xl xl:text-2xl">
             Conquiste a lealdade do seu público-alvo com soluções de excelência.
@@ -195,9 +237,7 @@ export default function Servicos() {
             {cardsForClients}
           </div>
           <div className="lg:hidden mt-10 text-white">
-            <Carousel>
-              {cardsForClients}
-            </Carousel>
+            <Carousel>{cardsForClients}</Carousel>
           </div>
           <div className="flex flex-col gap-5 mt-10">
             <ButtonGreen
@@ -211,7 +251,10 @@ export default function Servicos() {
         </ContentContainer>
       </section>
 
-      <section className="w-full flex bg-gradient-to-b from-galileoPurple-500 to-galileoPurple-400 relative min-h-[75vh] overflow-x-scroll no-scrollbar pt-16" id="servicesToYourManagement">
+      <section
+        className="w-full flex bg-gradient-to-b from-galileoPurple-500 to-galileoPurple-400 relative min-h-[75vh] overflow-x-scroll no-scrollbar pt-16"
+        id="servicesToYourManagement"
+      >
         <ContentContainer className="flex flex-col my-auto py-6 z-10">
           <h1 className="text-center text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold mb-4">
             Tecnologia de ponta para Turbinar seu Crescimento
@@ -223,9 +266,7 @@ export default function Servicos() {
             {cardsForManagement}
           </div>
           <div className="lg:hidden mt-10 text-white">
-            <Carousel>
-              {cardsForManagement}
-            </Carousel>
+            <Carousel>{cardsForManagement}</Carousel>
           </div>
           <div className="flex flex-col gap-5 mt-10">
             <ButtonGreen
@@ -239,16 +280,22 @@ export default function Servicos() {
         </ContentContainer>
       </section>
 
-      <section className="relative w-full bg-gradient-to-b from-galileoPurple-400 to-galileoPurple-900" id="contactForm">
+      <section
+        className="relative w-full bg-gradient-to-b from-galileoPurple-400 to-galileoPurple-900"
+        id="contactForm"
+      >
         <ContentContainer className="w-full grid lg:grid-cols-1 gap-x-20 gap-y-2 justify-between items-start relative z-10 my-10">
           <div className="flex flex-col justify-between md:w-[75%] mx-auto">
             <Card>
               <ContactForm />
             </Card>
-            <p className="text-center text-md font-semibold opacity-80 px-5 mt-4 lg:mt-0">Ao enviar esse formulário, você concorda em receber contatos da GalileoSoft.</p>
+            <p className="text-center text-md font-semibold opacity-80 px-5 mt-4 lg:mt-0">
+              Ao enviar esse formulário, você concorda em receber contatos da
+              GalileoSoft.
+            </p>
           </div>
         </ContentContainer>
       </section>
     </main>
-  )
+  );
 }
